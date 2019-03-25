@@ -28,6 +28,17 @@ class DadosCard{
 
 class Database{
 
+    public static func getDadosCard()->[DadosCard]{
     
+    return[
+        DadosCard(nome: "Alergia", subs: "Suas alergias", tipo: DataType.Alergia),
+        DadosCard(nome: "Doença", subs: "Suas doenças", tipo: DataType.Doenca),
+        DadosCard(nome: "Anamnese", subs: "Suas anamneses", tipo: DataType.Anamnese),
+        DadosCard(nome: "Cirurgia", subs: "Suas cirurgias", tipo: DataType.Cirurgia),
+        DadosCard(nome: "Doenças Físicas", subs: "Suas doenças físicas", tipo: DataType.DoencaFisica),
+        DadosCard(nome: "Vacias", subs: "Suas vacinas", tipo: DataType.Vacina)
+        
+        ]
+    }
     
 }

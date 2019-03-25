@@ -542,13 +542,13 @@
         <!--Dados-->
         <scene sceneID="Kdo-uC-U5l">
             <objects>
-                <tableViewController id="K7Q-yG-aYs" sceneMemberID="viewController">
+                <tableViewController id="K7Q-yG-aYs" customClass="TelaDadosTableViewController" customModule="UnfoldMedic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" id="zAm-qH-R7S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="CVh-m2-PPL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardDadosIdentifier" rowHeight="86" id="CVh-m2-PPL" customClass="CardDadosTableViewCell" customModule="UnfoldMedic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CVh-m2-PPL" id="4PS-4w-EAY">
@@ -585,7 +585,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aWI-s8-ZCt" kind="show" id="y3b-ZQ-7Lo"/>
+                                    <outlet property="LabelNome" destination="leg-9H-KQk" id="q8o-S7-ej2"/>
+                                    <outlet property="LabelSubs" destination="rKc-ey-CZZ" id="TQX-T0-mq6"/>
+                                    <segue destination="aWI-s8-ZCt" kind="show" identifier="exibirDadosSegue" id="y3b-ZQ-7Lo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

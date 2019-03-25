@@ -16,6 +16,7 @@
 		3F75D2EF2245AA300038EA50 /* TelaLoginPacienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */; };
 		3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */; };
 		3F75D2F52245AF510038EA50 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2F42245AF510038EA50 /* Database.swift */; };
+		3FA43C5022499FA000580AFC /* CardDadosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C4F22499FA000580AFC /* CardDadosTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaLoginPacienteViewController.swift; sourceTree = "<group>"; };
 		3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaDadosTableViewController.swift; sourceTree = "<group>"; };
 		3F75D2F42245AF510038EA50 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3FA43C4F22499FA000580AFC /* CardDadosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDadosTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		3F00858622443B8800F2679B /* UnfoldMedic */ = {
 			isa = PBXGroup;
 			children = (
+				3FA43C4E22499F8900580AFC /* New Group */,
 				3F75D2F32245AEBE0038EA50 /* Dados */,
 				3F75D2F02245ACE60038EA50 /* TableViewControllers */,
 				3F75D2E922459B490038EA50 /* ViewControllers */,
@@ -98,6 +101,14 @@
 				3F75D2F42245AF510038EA50 /* Database.swift */,
 			);
 			name = Dados;
+			sourceTree = "<group>";
+		};
+		3FA43C4E22499F8900580AFC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3FA43C4F22499FA000580AFC /* CardDadosTableViewCell.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA43C5022499FA000580AFC /* CardDadosTableViewCell.swift in Sources */,
 				3F75D2F52245AF510038EA50 /* Database.swift in Sources */,
 				3F00858A22443B8800F2679B /* ViewController.swift in Sources */,
 				3F75D2ED22459DEF0038EA50 /* TelaPerfilViewController.swift in Sources */,

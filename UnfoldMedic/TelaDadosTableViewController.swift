@@ -10,14 +10,11 @@ import UIKit
 
 class TelaDadosTableViewController: UITableViewController {
 
+    var cardDados = [DadosCard]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        cardDados=Database.getDadosCard()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,24 +25,32 @@ class TelaDadosTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+       
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return cardDados.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cardDadosIdentifier", for: indexPath)
 
+        
+        if let cardCell = cell as? CardDadosTableViewCell{
+        
+            let card = cardDados[indexPath.row]
+            cardCell.LabelNome.text = card.nome
+            cardCell.LabelSubs.text = card.subs
+        
+        }
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,14 +87,16 @@ class TelaDadosTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "exibirDadosSegue"{
+        
+        }
+    
     }
-    */
+    
 
 }
