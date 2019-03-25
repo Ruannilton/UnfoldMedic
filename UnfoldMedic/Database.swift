@@ -12,6 +12,7 @@ enum DataType{
    case Alergia,Doenca,Anamnese,Cirurgia,DoencaFisica,Vacina
 }
 
+
 class DadosCard{
 
     var nome:String
