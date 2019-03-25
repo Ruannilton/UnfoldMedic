@@ -13,16 +13,22 @@ class TelaPerfilViewController: UIViewController {
 
     @IBOutlet weak var lable_name: UILabel!
     
-    @IBOutlet weak var label_estado: UIStackView!
+    @IBOutlet weak var label_estado: UILabel!
     
     @IBOutlet weak var label_cidade: UILabel!
    
     @IBOutlet weak var label_numero: UILabel!
     
+    var perfil: Perfil?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        label_idade.text = String(perfil?.idade ?? 0)
+        label_cidade.text = perfil?.cidade
+        label_estado.text = perfil?.estado
+        label_numero.text = String(perfil?.numero ?? 0)
+        lable_name.text = perfil?.nome
     }
 
     override func didReceiveMemoryWarning() {

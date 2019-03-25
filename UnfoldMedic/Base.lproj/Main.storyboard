@@ -327,7 +327,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="NN8-n6-3Et"/>
                     <connections>
                         <outlet property="label_cidade" destination="d40-1N-Hga" id="1SX-bd-uX3"/>
-                        <outlet property="label_estado" destination="aXg-Vz-WSQ" id="AV6-P0-op6"/>
+                        <outlet property="label_estado" destination="Cc8-om-0kd" id="oXZ-me-hoa"/>
                         <outlet property="label_idade" destination="6Ur-ml-LiU" id="chA-ux-dxV"/>
                         <outlet property="label_numero" destination="hLK-pr-w76" id="ePn-AP-cf1"/>
                         <outlet property="lable_name" destination="rlD-ne-EWf" id="ObX-yY-3Gb"/>

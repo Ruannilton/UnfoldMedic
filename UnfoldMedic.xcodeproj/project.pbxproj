@@ -16,6 +16,9 @@
 		3F75D2EF2245AA300038EA50 /* TelaLoginPacienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */; };
 		3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */; };
 		3F75D2F52245AF510038EA50 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2F42245AF510038EA50 /* Database.swift */; };
+		3FE29A87224987480025E474 /* ConfigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE29A86224987480025E474 /* ConfigTableViewCell.swift */; };
+		3FE29A89224987C00025E474 /* ConfigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE29A88224987C00025E474 /* ConfigTableViewController.swift */; };
+		3FE29A8F22498AC10025E474 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE29A8E22498AC10025E474 /* Perfil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaLoginPacienteViewController.swift; sourceTree = "<group>"; };
 		3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaDadosTableViewController.swift; sourceTree = "<group>"; };
 		3F75D2F42245AF510038EA50 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3FE29A86224987480025E474 /* ConfigTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigTableViewCell.swift; sourceTree = "<group>"; };
+		3FE29A88224987C00025E474 /* ConfigTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigTableViewController.swift; sourceTree = "<group>"; };
+		3FE29A8E22498AC10025E474 /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,8 @@
 				3F00858722443B8800F2679B /* AppDelegate.swift */,
 				3F00858922443B8800F2679B /* ViewController.swift */,
 				3F00858B22443B8800F2679B /* Main.storyboard */,
+				3FE29A88224987C00025E474 /* ConfigTableViewController.swift */,
+				3FE29A86224987480025E474 /* ConfigTableViewCell.swift */,
 				3F00858E22443B8800F2679B /* Assets.xcassets */,
 				3F00859022443B8800F2679B /* LaunchScreen.storyboard */,
 				3F00859322443B8800F2679B /* Info.plist */,
@@ -80,6 +88,7 @@
 			children = (
 				3F75D2EC22459DEF0038EA50 /* TelaPerfilViewController.swift */,
 				3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */,
+				3FE29A8E22498AC10025E474 /* Perfil.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -175,9 +184,12 @@
 				3F75D2F52245AF510038EA50 /* Database.swift in Sources */,
 				3F00858A22443B8800F2679B /* ViewController.swift in Sources */,
 				3F75D2ED22459DEF0038EA50 /* TelaPerfilViewController.swift in Sources */,
+				3FE29A8F22498AC10025E474 /* Perfil.swift in Sources */,
 				3F00858822443B8800F2679B /* AppDelegate.swift in Sources */,
 				3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */,
+				3FE29A87224987480025E474 /* ConfigTableViewCell.swift in Sources */,
 				3F75D2EF2245AA300038EA50 /* TelaLoginPacienteViewController.swift in Sources */,
+				3FE29A89224987C00025E474 /* ConfigTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
