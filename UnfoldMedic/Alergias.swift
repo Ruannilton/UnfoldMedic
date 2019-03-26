@@ -21,8 +21,21 @@ class Alergias:DadosUsuario {
         self.nome = nome
     }
     
+      init(json: [String: AnyObject]){
+        self.Desc =  json["Desc"] as? String ?? ""
+        self.Tipo =  json["Tipo"] as? String ?? ""
+      
+        if let  vet = json["Causas"] as? [ String ] {
+            for str in vet {
+              //  let x = Alergias(json: jsonCel)
+                self.Causas.append(str)
+            }
+        }
+        
+    }
    
     func getNome () -> String {
         return nome
     }
 }
+

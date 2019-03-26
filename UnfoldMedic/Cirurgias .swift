@@ -25,4 +25,10 @@ class  Cirurgias :DadosUsuario{
     func getNome () -> String {
         return nome
     }
+    init(json: [String: AnyObject]){
+        self.Tipo = json["Tipo"] as? String ?? ""
+        self.Local = json["Local"] as? String ?? ""
+        self.Anestesia = json["Anestesia"] as? Bool ?? true
+        self.Desc = json["Desc"] as? String ?? ""
+    }
 }

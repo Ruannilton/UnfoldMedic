@@ -16,6 +16,12 @@ class TelaLoginPacienteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      //  getAll.get{(usuario) in print(usuario[0].Nome) }
+        getName.get(Nome: "jorge", callback: {(usuario) in print(usuario.Nome) })
+            //{ (usuario) in
+            //print(usuario.Nome)}
+//
 
         // Do any additional setup after loading the view.
     }

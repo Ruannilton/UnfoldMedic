@@ -219,6 +219,9 @@
 				3FA43C602249A2E400580AFC /* Vacinas.swift in Sources */,
 				3FA43C622249A6C200580AFC /* ExibirDadosTableViewController.swift in Sources */,
 				3F75D2F52245AF510038EA50 /* Database.swift in Sources */,
+				3FB232BF224986C1004D21F8 /* Anamnese.swift in Sources */,
+				3FB232C1224986C1004D21F8 /* DoencasFisicas.swift in Sources */,
+				3FB232C9224986CF004D21F8 /* Vacinas.swift in Sources */,
 				3F00858A22443B8800F2679B /* ViewController.swift in Sources */,
 				3FA43C5D2249A2E400580AFC /* Doencas.swift in Sources */,
 				3FA43C5C2249A2E400580AFC /* Dados.swift in Sources */,
@@ -228,8 +231,16 @@
 				3FA43C5E2249A2E400580AFC /* DoencasFisicas.swift in Sources */,
 				3FA43C5F2249A2E400580AFC /* Medicamentos.swift in Sources */,
 				3F00858822443B8800F2679B /* AppDelegate.swift in Sources */,
+				3FB232C7224986CF004D21F8 /* Dados.swift in Sources */,
+				3FB232BE224986C1004D21F8 /* Alergias.swift in Sources */,
+				3FB232C0224986C1004D21F8 /* Cirurgias .swift in Sources */,
+				3FCFE309224ACFD600600555 /* Req_Post.swift in Sources */,
+				3FB232C8224986CF004D21F8 /* Doencas.swift in Sources */,
+				3FB232CC22498717004D21F8 /* Req_GetAll.swift in Sources */,
+				3FB232C3224986C1004D21F8 /* Usuario.swift in Sources */,
 				3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */,
 				3F75D2EF2245AA300038EA50 /* TelaLoginPacienteViewController.swift in Sources */,
+				3FB232C2224986C1004D21F8 /* Medicamentos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

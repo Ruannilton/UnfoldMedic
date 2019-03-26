@@ -19,4 +19,10 @@ class DoencasFisicas :DadosUsuario{
     func getNome () -> String {
         return Nome
     }
+
+   init(json: [String: AnyObject]) {
+        self.Nome = json["Nome"] as? String ?? ""
+        self.Desc = json["Desc"] as? String ?? ""
+    }
+    
 }

@@ -1,5 +1,5 @@
 //
-//  Doencas.swift
+//  DoencasFisicas.swift
 //  Unfold
 //
 //  Created by student on 22/03/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Doencas :DadosUsuario{
+class DoencasFisicas{
     var Nome: String
     var Desc: String
     
@@ -16,12 +16,5 @@ class Doencas :DadosUsuario{
         self.Nome = Nome
         self.Desc = Desc
     }
-    func getNome () -> String {
-        return Nome
-    }
     
-    init(json: [String: AnyObject]) {
-        self.Nome = json["Nome"] as? String ?? ""
-        self.Desc = json["Desc"] as? String ?? ""
-    }
 }

@@ -24,11 +24,14 @@ class Medicamentos :DadosUsuario{
     }
     
     func getNome () -> String {
-       
-        
-    
         return Nome
-    
     }
 
+  init(json: [String: AnyObject]) {
+        self.Substancia = json["Substancia"] as? String ?? ""
+        self.DataFinal = json["DataFinal"] as? Data ?? Data()
+        self.DataInicial = json["DataInicial"] as? Data ?? Data()
+        self.Desc = json["Desc"] as? String ?? ""
+    }
+    
 }

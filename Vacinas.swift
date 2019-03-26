@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Vacinas:DadosUsuario{
-
+class Vacinas{
     var Nome: String
     var Data: Date
     var Desc: String
@@ -18,13 +17,5 @@ class Vacinas:DadosUsuario{
         self.Nome = Nome
         self.Data = Data
         self.Desc = Desc
-    }
-    func getNome () -> String {
-        return Nome
-    }
-    init(json: [String: AnyObject]){
-        self.Nome =  json["Nome"] as? String ?? ""
-        self.Data =  json["Data"] as? Date ?? Date()
-        self.Desc =  json["Desc"] as? String ?? ""
     }
 }

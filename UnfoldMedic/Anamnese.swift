@@ -27,4 +27,12 @@ class Anamnese:DadosUsuario{
     func getNome () -> String {
         return nome
     }
+    init(json: [String: AnyObject]) {
+            self.Data = json["Data"] as? Date ?? Date()
+            self.Local = json["Local"] as? String ?? ""
+            self.QueixaPrincipal = json["QueixaPrincipal"] as? String ?? ""
+            self.Hma = json["Hma"] as? String ?? ""
+            self.InterSis = json["InterSis"] as? String ?? ""
+        }
+    
 }
