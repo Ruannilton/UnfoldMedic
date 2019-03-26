@@ -8,8 +8,12 @@
 
 import Foundation
 
+protocol DadosUsuario {
+         func getNome()-> String
+}
+
 enum DataType{
-   case Alergia,Doenca,Anamnese,Cirurgia,DoencaFisica,Vacina
+   case Alergia,Doenca,Anamnese,Cirurgia,DoencaFisica,Vacina,Medicamentos
 }
 
 
@@ -29,6 +33,14 @@ class DadosCard{
 
 class Database{
 
+    static var ListaVacinas = [Vacinas]()
+    static var ListaCirurgias = [Cirurgias]()
+    static var ListaMedicamentos = [Medicamentos]()
+    static var ListaAlergias = [Alergias]()
+    static var ListaDoencasFisicas = [DoencasFisicas]()
+    static var ListaDoencas = [Doencas]()
+    static var ListaAnamnese = [Anamnese]()
+    
     public static func getDadosCard()->[DadosCard]{
     
     return[
@@ -37,9 +49,33 @@ class Database{
         DadosCard(nome: "Anamnese", subs: "Suas anamneses", tipo: DataType.Anamnese),
         DadosCard(nome: "Cirurgia", subs: "Suas cirurgias", tipo: DataType.Cirurgia),
         DadosCard(nome: "Doenças Físicas", subs: "Suas doenças físicas", tipo: DataType.DoencaFisica),
-        DadosCard(nome: "Vacias", subs: "Suas vacinas", tipo: DataType.Vacina)
-        
+        DadosCard(nome: "Vacinas", subs: "Suas vacinas", tipo: DataType.Vacina),
+        DadosCard(nome: "Medicamentos", subs: "Suas medicamentos", tipo: DataType.Medicamentos)
         ]
+    }
+    
+    public static func getDadosUsuario(tipo:DataType)->[DadosUsuario]{
+        switch tipo {
+        case .Alergia:
+            return ListaAlergias
+        case .Anamnese:
+            return ListaAnamnese
+        case .Cirurgia:
+            return ListaCirurgias
+        case .Doenca:
+            return [Doencas(Nome:"Amnesia",Desc:"Esquece as coisas"),Doencas(Nome:"Cancer",Desc:"Que triste")]
+        case .DoencaFisica:
+            return ListaDoencasFisicas
+        case .Vacina:
+            return ListaVacinas
+        case .Medicamentos:
+            return ListaMedicamentos
+    
+        default:
+            return ListaAlergias
+            
+        }
+        
     }
     
 }
