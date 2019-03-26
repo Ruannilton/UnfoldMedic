@@ -12,8 +12,8 @@ import Foundation
 class postUser{
     
     func post(pUser:Usuario ){
-        
-        let json: [AnyObject: AnyObject] = pUser
+     //
+       // let json: [AnyObject: AnyObject] = pUser
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
