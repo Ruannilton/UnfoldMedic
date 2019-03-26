@@ -602,16 +602,16 @@
             </objects>
             <point key="canvasLocation" x="1820" y="188.45577211394306"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Exibir Dados Table View Controller-->
         <scene sceneID="hzx-1D-GNY">
             <objects>
-                <tableViewController id="aWI-s8-ZCt" sceneMemberID="viewController">
+                <tableViewController id="aWI-s8-ZCt" customClass="ExibirDadosTableViewController" customModule="UnfoldMedic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Bj-kY-Rge">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="B3Q-6N-432">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExibirDadosCellIdentifier" rowHeight="58" id="B3Q-6N-432" customClass="DadosUsuarioTableViewCell" customModule="UnfoldMedic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B3Q-6N-432" id="UgT-zW-3nY">
@@ -630,6 +630,9 @@
                                         <constraint firstItem="bd4-2B-fIK" firstAttribute="leading" secondItem="UgT-zW-3nY" secondAttribute="leadingMargin" constant="8" id="f3j-aE-Xsh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="LabelNome" destination="bd4-2B-fIK" id="sfT-yk-BKJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

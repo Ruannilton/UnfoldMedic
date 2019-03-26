@@ -16,4 +16,7 @@ class Doencas :DadosUsuario{
         self.Nome = Nome
         self.Desc = Desc
     }
+    func getNome () -> String {
+        return Nome
+    }
 }

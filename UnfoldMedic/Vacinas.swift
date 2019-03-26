@@ -18,4 +18,7 @@ class Vacinas:DadosUsuario{
         self.Data = Data
         self.Desc = Desc
     }
+    func getNome () -> String {
+        return Nome
+    }
 }

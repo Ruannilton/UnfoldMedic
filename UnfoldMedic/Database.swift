@@ -9,7 +9,7 @@
 import Foundation
 
 protocol DadosUsuario {
-    
+         func getNome()-> String
 }
 
 enum DataType{
@@ -63,7 +63,7 @@ class Database{
         case .Cirurgia:
             return ListaCirurgias
         case .Doenca:
-            return ListaDoencas
+            return [Doencas(Nome:"Amnesia",Desc:"Esquece as coisas"),Doencas(Nome:"Cancer",Desc:"Que triste")]
         case .DoencaFisica:
             return ListaDoencasFisicas
         case .Vacina:

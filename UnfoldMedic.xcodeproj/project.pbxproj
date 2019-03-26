@@ -25,6 +25,8 @@
 		3FA43C5E2249A2E400580AFC /* DoencasFisicas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C562249A2E400580AFC /* DoencasFisicas.swift */; };
 		3FA43C5F2249A2E400580AFC /* Medicamentos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C572249A2E400580AFC /* Medicamentos.swift */; };
 		3FA43C602249A2E400580AFC /* Vacinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C582249A2E400580AFC /* Vacinas.swift */; };
+		3FA43C622249A6C200580AFC /* ExibirDadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C612249A6C200580AFC /* ExibirDadosTableViewController.swift */; };
+		3FA43C642249A8C700580AFC /* DadosUsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C632249A8C700580AFC /* DadosUsuarioTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		3FA43C562249A2E400580AFC /* DoencasFisicas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoencasFisicas.swift; sourceTree = "<group>"; };
 		3FA43C572249A2E400580AFC /* Medicamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicamentos.swift; sourceTree = "<group>"; };
 		3FA43C582249A2E400580AFC /* Vacinas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacinas.swift; sourceTree = "<group>"; };
+		3FA43C612249A6C200580AFC /* ExibirDadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExibirDadosTableViewController.swift; sourceTree = "<group>"; };
+		3FA43C632249A8C700580AFC /* DadosUsuarioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadosUsuarioTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */,
+				3FA43C612249A6C200580AFC /* ExibirDadosTableViewController.swift */,
 			);
 			name = TableViewControllers;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				3FA43C4F22499FA000580AFC /* CardDadosTableViewCell.swift */,
+				3FA43C632249A8C700580AFC /* DadosUsuarioTableViewCell.swift */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -211,12 +217,14 @@
 				3FA43C5A2249A2E400580AFC /* Anamnese.swift in Sources */,
 				3FA43C592249A2E400580AFC /* Alergias.swift in Sources */,
 				3FA43C602249A2E400580AFC /* Vacinas.swift in Sources */,
+				3FA43C622249A6C200580AFC /* ExibirDadosTableViewController.swift in Sources */,
 				3F75D2F52245AF510038EA50 /* Database.swift in Sources */,
 				3F00858A22443B8800F2679B /* ViewController.swift in Sources */,
 				3FA43C5D2249A2E400580AFC /* Doencas.swift in Sources */,
 				3FA43C5C2249A2E400580AFC /* Dados.swift in Sources */,
 				3F75D2ED22459DEF0038EA50 /* TelaPerfilViewController.swift in Sources */,
 				3FA43C5B2249A2E400580AFC /* Cirurgias .swift in Sources */,
+				3FA43C642249A8C700580AFC /* DadosUsuarioTableViewCell.swift in Sources */,
 				3FA43C5E2249A2E400580AFC /* DoencasFisicas.swift in Sources */,
 				3FA43C5F2249A2E400580AFC /* Medicamentos.swift in Sources */,
 				3F00858822443B8800F2679B /* AppDelegate.swift in Sources */,

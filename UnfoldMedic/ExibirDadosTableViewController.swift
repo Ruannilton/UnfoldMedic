@@ -1,26 +1,26 @@
 //
-//  TelaDadosTableViewController.swift
+//  ExibirDadosTableViewController.swift
 //  UnfoldMedic
 //
-//  Created by student on 22/03/19.
+//  Created by student on 25/03/19.
 //  Copyright © 2019 student. All rights reserved.
 //
 
 import UIKit
 
-class TelaDadosTableViewController: UITableViewController {
+class ExibirDadosTableViewController: UITableViewController {
 
-    var cardDados = [DadosCard]()
+    var dadosAExibir = [DadosUsuario]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardDados=Database.getDadosCard()
+
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+            }
 
     // MARK: - Table view data source
 
@@ -30,20 +30,17 @@ class TelaDadosTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return cardDados.count
+      
+        return dadosAExibir.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cardDadosIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExibirDadosCellIdentifier", for: indexPath)
+        if let exibirCell = cell as? DadosUsuarioTableViewCell{
         
-        if let cardCell = cell as? CardDadosTableViewCell{
-        
-            let card = cardDados[indexPath.row]
-            cardCell.LabelNome.text = card.nome
-            cardCell.LabelSubs.text = card.subs
+            let dados = dadosAExibir[indexPath.row]
+            exibirCell.LabelNome.text = dados.getNome()
         
         }
         // Configure the cell...
@@ -87,18 +84,14 @@ class TelaDadosTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "exibirDadosSegue"{
-            if let novaView = segue.destination as? ExibirDadosTableViewController{
-                novaView.dadosAExibir = Database.getDadosUsuario(tipo: cardDados[tableView.indexPathForSelectedRow!.row].tipo)
-            }
-        }
-    
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }
