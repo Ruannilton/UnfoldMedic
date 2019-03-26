@@ -21,9 +21,9 @@ class DadosCard{
 
     var nome:String
     var subs:String
-    var tipo:DataType
+    var tipo:CardType
     
-    init(nome:String,subs:String,tipo:DataType){
+    init(nome:String,subs:String,tipo:CardType){
         self.nome = nome
         self.subs = subs
         self.tipo = tipo
