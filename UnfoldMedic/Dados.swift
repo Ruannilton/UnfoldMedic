@@ -53,7 +53,6 @@ class Dados{
                 self.ListaAnamnese.append(x)
             }}
         
-        
     }
 }
 

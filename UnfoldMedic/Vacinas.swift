@@ -18,4 +18,6 @@ init(json: [String: AnyObject]){
         self.Data =  json["Data"] as? Date ?? Date()
         self.Desc =  json["Desc"] as? String ?? ""
     }
+    
+  
 }
