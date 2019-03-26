@@ -21,9 +21,9 @@ class DadosCard{
 
     var nome:String
     var subs:String
-    var tipo:CardType
+    var tipo:DataType
     
-    init(nome:String,subs:String,tipo:CardType){
+    init(nome:String,subs:String,tipo:DataType){
         self.nome = nome
         self.subs = subs
         self.tipo = tipo
@@ -38,8 +38,10 @@ class Database{
     static var ListaMedicamentos = [Medicamentos]()
     static var ListaAlergias = [Alergias]()
     static var ListaDoencasFisicas = [DoencasFisicas]()
-    static var ListaDoencas = [Doencas]()
     static var ListaAnamnese = [Anamnese]()
+    static var ListaDoencas = [Doencas]()
+    
+
     
     public static func getDadosCard()->[DadosCard]{
     
@@ -63,7 +65,7 @@ class Database{
         case .Cirurgia:
             return ListaCirurgias
         case .Doenca:
-            return [Doencas(Nome:"Amnesia",Desc:"Esquece as coisas"),Doencas(Nome:"Cancer",Desc:"Que triste")]
+            return ListaDoencas
         case .DoencaFisica:
             return ListaDoencasFisicas
         case .Vacina:
@@ -75,6 +77,52 @@ class Database{
             return ListaAlergias
             
         }
+        
+    }
+    
+       public static func Load(json: [String: AnyObject])->Void{
+        //Vacinas
+        if let  vet = json["Doencas"] as? [ [String: AnyObject] ] {
+            for jsonCel in vet {
+                let x = Doencas(json: jsonCel)
+                ListaDoencas.append(x)
+            }}
+
+        //Vacinas
+        if let  vet = json["Vacinas"] as? [ [String: AnyObject] ] {
+            for jsonCel in vet {
+                let x = Vacinas(json: jsonCel)
+                ListaVacinas.append(x)
+            }}
+        
+        //Cirurgias
+        if let  vet = json["Cirurgias"] as? [ [String: AnyObject] ] {
+            for jsonCel in vet {
+                let x = Cirurgias(json: jsonCel)
+                ListaCirurgias.append(x)
+            }}
+        
+        //Medicamento
+        if let  vet = json["Medicamentos"] as? [ [String: AnyObject] ] {
+            for jsonCel in vet {
+                let x = Medicamentos(json: jsonCel)
+                ListaMedicamentos.append(x)
+            }}
+        
+        //Alergias
+        if let  vet = json["Alergias"] as? [ [String: AnyObject] ] {
+            for jsonCel in vet {
+                let x = Alergias(json: jsonCel)
+                ListaAlergias.append(x)
+            }}
+        
+        //Anamnese
+        if let  vet = json["Anamnese"] as? [ [String: AnyObject] ] {
+            for jsonCel in vet {
+                let x = Anamnese(json: jsonCel)
+                ListaAnamnese.append(x)
+            }}
+        
         
     }
     

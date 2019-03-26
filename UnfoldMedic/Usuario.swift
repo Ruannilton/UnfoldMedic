@@ -24,7 +24,7 @@ class Usuario{
     var Cidade:String
     var Estado: String
     
-    var Dado: Dados
+    
     
    /* init(Nome: String, DataNasc: Date, TipoSanguineo: String, TipoConta: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String, _id: String, _rev: String) {*/
     init(json: [String: AnyObject]){
@@ -40,8 +40,8 @@ class Usuario{
         self.Estado = json["Estado"] as? String ?? ""
         self._id = json["_id"] as? String ?? ""
         self._rev = json["_rev"] as? String ?? ""
+        Database.Load(json: (json["Dados"] as? [ String: AnyObject])!)
         
-        self.Dado =  Dados(json: (json["Dados"] as? [ String: AnyObject])! )
       /*  self.Nome = "aa"
         self.DataNasc = Date()
         self.TipoSanguineo = "a"

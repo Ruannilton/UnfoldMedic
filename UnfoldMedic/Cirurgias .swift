@@ -9,7 +9,7 @@
 import Foundation
 
 class  Cirurgias :DadosUsuario{
-    var nome: String
+    
     var Tipo: String
     var Local: String
     var Anestesia: Bool
@@ -20,10 +20,10 @@ class  Cirurgias :DadosUsuario{
         self.Local = Local
         self.Anestesia = Anestesia
         self.Desc = Desc
-        self.nome = nome
+     
     }
     func getNome () -> String {
-        return nome
+        return Tipo
     }
     init(json: [String: AnyObject]){
         self.Tipo = json["Tipo"] as? String ?? ""

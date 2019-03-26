@@ -15,10 +15,13 @@ class TelaLoginPacienteViewController: UIViewController {
     @IBOutlet weak var textField_password: UITextField!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        getAll.get{(usuario) in var pessoa = (usuario[0])}
+        
         
       //  getAll.get{(usuario) in print(usuario[0].Nome) }
-        getName.get(Nome: "jorge", callback: {(usuario) in print(usuario.Nome) })
+       // getName.get(Nome: "jorge", callback: {(usuario) in print(usuario.Nome) })
             //{ (usuario) in
             //print(usuario.Nome)}
 //

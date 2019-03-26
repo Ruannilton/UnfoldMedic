@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3F00858822443B8800F2679B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00858722443B8800F2679B /* AppDelegate.swift */; };
-		3F00858A22443B8800F2679B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00858922443B8800F2679B /* ViewController.swift */; };
 		3F00858D22443B8800F2679B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F00858B22443B8800F2679B /* Main.storyboard */; };
 		3F00858F22443B8800F2679B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F00858E22443B8800F2679B /* Assets.xcassets */; };
 		3F00859222443B8800F2679B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F00859022443B8800F2679B /* LaunchScreen.storyboard */; };
+		3F5E4A1E224ADBA900006226 /* Req_GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E4A1C224ADBA900006226 /* Req_GetAll.swift */; };
+		3F5E4A1F224ADBA900006226 /* Req_Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E4A1D224ADBA900006226 /* Req_Post.swift */; };
+		3F5E4A21224ADBB300006226 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E4A20224ADBB300006226 /* Usuario.swift */; };
 		3F75D2ED22459DEF0038EA50 /* TelaPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2EC22459DEF0038EA50 /* TelaPerfilViewController.swift */; };
 		3F75D2EF2245AA300038EA50 /* TelaLoginPacienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */; };
 		3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */; };
@@ -32,11 +34,13 @@
 /* Begin PBXFileReference section */
 		3F00858422443B8800F2679B /* UnfoldMedic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnfoldMedic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F00858722443B8800F2679B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F00858922443B8800F2679B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F00858C22443B8800F2679B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F00858E22443B8800F2679B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F00859122443B8800F2679B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F00859322443B8800F2679B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5E4A1C224ADBA900006226 /* Req_GetAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Req_GetAll.swift; sourceTree = "<group>"; };
+		3F5E4A1D224ADBA900006226 /* Req_Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Req_Post.swift; sourceTree = "<group>"; };
+		3F5E4A20224ADBB300006226 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		3F75D2EC22459DEF0038EA50 /* TelaPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaPerfilViewController.swift; sourceTree = "<group>"; };
 		3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaLoginPacienteViewController.swift; sourceTree = "<group>"; };
 		3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaDadosTableViewController.swift; sourceTree = "<group>"; };
@@ -84,12 +88,14 @@
 		3F00858622443B8800F2679B /* UnfoldMedic */ = {
 			isa = PBXGroup;
 			children = (
+				3F5E4A20224ADBB300006226 /* Usuario.swift */,
+				3F5E4A1C224ADBA900006226 /* Req_GetAll.swift */,
+				3F5E4A1D224ADBA900006226 /* Req_Post.swift */,
 				3FA43C4E22499F8900580AFC /* New Group */,
 				3F75D2F32245AEBE0038EA50 /* Dados */,
 				3F75D2F02245ACE60038EA50 /* TableViewControllers */,
 				3F75D2E922459B490038EA50 /* ViewControllers */,
 				3F00858722443B8800F2679B /* AppDelegate.swift */,
-				3F00858922443B8800F2679B /* ViewController.swift */,
 				3F00858B22443B8800F2679B /* Main.storyboard */,
 				3F00858E22443B8800F2679B /* Assets.xcassets */,
 				3F00859022443B8800F2679B /* LaunchScreen.storyboard */,
@@ -219,28 +225,19 @@
 				3FA43C602249A2E400580AFC /* Vacinas.swift in Sources */,
 				3FA43C622249A6C200580AFC /* ExibirDadosTableViewController.swift in Sources */,
 				3F75D2F52245AF510038EA50 /* Database.swift in Sources */,
-				3FB232BF224986C1004D21F8 /* Anamnese.swift in Sources */,
-				3FB232C1224986C1004D21F8 /* DoencasFisicas.swift in Sources */,
-				3FB232C9224986CF004D21F8 /* Vacinas.swift in Sources */,
-				3F00858A22443B8800F2679B /* ViewController.swift in Sources */,
 				3FA43C5D2249A2E400580AFC /* Doencas.swift in Sources */,
 				3FA43C5C2249A2E400580AFC /* Dados.swift in Sources */,
+				3F5E4A21224ADBB300006226 /* Usuario.swift in Sources */,
 				3F75D2ED22459DEF0038EA50 /* TelaPerfilViewController.swift in Sources */,
 				3FA43C5B2249A2E400580AFC /* Cirurgias .swift in Sources */,
 				3FA43C642249A8C700580AFC /* DadosUsuarioTableViewCell.swift in Sources */,
 				3FA43C5E2249A2E400580AFC /* DoencasFisicas.swift in Sources */,
 				3FA43C5F2249A2E400580AFC /* Medicamentos.swift in Sources */,
 				3F00858822443B8800F2679B /* AppDelegate.swift in Sources */,
-				3FB232C7224986CF004D21F8 /* Dados.swift in Sources */,
-				3FB232BE224986C1004D21F8 /* Alergias.swift in Sources */,
-				3FB232C0224986C1004D21F8 /* Cirurgias .swift in Sources */,
-				3FCFE309224ACFD600600555 /* Req_Post.swift in Sources */,
-				3FB232C8224986CF004D21F8 /* Doencas.swift in Sources */,
-				3FB232CC22498717004D21F8 /* Req_GetAll.swift in Sources */,
-				3FB232C3224986C1004D21F8 /* Usuario.swift in Sources */,
+				3F5E4A1E224ADBA900006226 /* Req_GetAll.swift in Sources */,
 				3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */,
+				3F5E4A1F224ADBA900006226 /* Req_Post.swift in Sources */,
 				3F75D2EF2245AA300038EA50 /* TelaLoginPacienteViewController.swift in Sources */,
-				3FB232C2224986C1004D21F8 /* Medicamentos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

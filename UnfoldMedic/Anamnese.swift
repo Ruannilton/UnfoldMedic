@@ -9,23 +9,23 @@
 import Foundation
 
 class Anamnese:DadosUsuario{
-    var nome: String
-    var Data: String
+   
+    var Data: Date
     var Local: String
     var QueixaPrincipal: String
     var Hma: String
     var InterSis: String
     
-    init(nome: String,Data: String, Local: String, QueixaPrincipal: String, Hma: String, InterSis: String) {
+    init(nome: String,Data: Date, Local: String, QueixaPrincipal: String, Hma: String, InterSis: String) {
         self.Data = Data
         self.Local = Local
         self.QueixaPrincipal = QueixaPrincipal
         self.Hma = Hma
         self.InterSis = InterSis
-        self.nome=nome
+        
     }
     func getNome () -> String {
-        return nome
+        return QueixaPrincipal
     }
     init(json: [String: AnyObject]) {
             self.Data = json["Data"] as? Date ?? Date()
