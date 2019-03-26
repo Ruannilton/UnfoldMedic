@@ -26,6 +26,7 @@
 		3FB232C8224986CF004D21F8 /* Doencas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB232C5224986CF004D21F8 /* Doencas.swift */; };
 		3FB232C9224986CF004D21F8 /* Vacinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB232C6224986CF004D21F8 /* Vacinas.swift */; };
 		3FB232CC22498717004D21F8 /* Req_GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB232CB22498717004D21F8 /* Req_GetAll.swift */; };
+		3FCFE309224ACFD600600555 /* Req_Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFE308224ACFD600600555 /* Req_Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		3FB232C5224986CF004D21F8 /* Doencas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doencas.swift; sourceTree = "<group>"; };
 		3FB232C6224986CF004D21F8 /* Vacinas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacinas.swift; sourceTree = "<group>"; };
 		3FB232CB22498717004D21F8 /* Req_GetAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Req_GetAll.swift; sourceTree = "<group>"; };
+		3FCFE308224ACFD600600555 /* Req_Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Req_Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				3FB232CB22498717004D21F8 /* Req_GetAll.swift */,
+				3FCFE308224ACFD600600555 /* Req_Post.swift */,
 			);
 			name = Requisitions;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				3FB232C7224986CF004D21F8 /* Dados.swift in Sources */,
 				3FB232BE224986C1004D21F8 /* Alergias.swift in Sources */,
 				3FB232C0224986C1004D21F8 /* Cirurgias .swift in Sources */,
+				3FCFE309224ACFD600600555 /* Req_Post.swift in Sources */,
 				3FB232C8224986CF004D21F8 /* Doencas.swift in Sources */,
 				3FB232CC22498717004D21F8 /* Req_GetAll.swift in Sources */,
 				3FB232C3224986C1004D21F8 /* Usuario.swift in Sources */,
