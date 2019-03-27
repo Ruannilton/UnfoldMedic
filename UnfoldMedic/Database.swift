@@ -104,6 +104,12 @@ class Database{
 }
 
 
-/*protocol Jsivis {
-    requirements
-}*/
+protocol Jsivis {
+     func GetJson() -> [String:Any]
+}
+
+
+
+
+
+

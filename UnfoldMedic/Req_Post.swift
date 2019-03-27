@@ -12,9 +12,7 @@ import Foundation
 class postUser{
     //funcioando
     static func post(pUser:Usuario ){
-        let parameters = ["Username" : "@xxxx",
-                          "tweeter":"Hello",
-                          "jorge": ["abc":"acb","aa":"bb"]] as [String : Any]
+        let parameters = pUser.GetJson()
         
         
         

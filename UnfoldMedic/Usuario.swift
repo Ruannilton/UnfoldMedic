@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Usuario{
+class Usuario : Jsivis{
     
     let _id: String
     let _rev: String
@@ -61,5 +61,24 @@ class Usuario{
         self._id = "a"
         self._rev = "a"*/
     }
+    
+    func GetJson() -> [String : Any] {
+        return [
+        "Nome":"\(self.Nome)",
+        "Nascimento":"\(self.DataNasc)",
+        "TipoSanguineo":"\(self.TipoSanguineo)",
+        "TipoConta":"\(self.TipoConta)",
+        "Login":"\(self.Login)",
+        "Senha":"\(self.Senha)",
+        "Sexo":"\(self.Sexo)",
+        "Cpf":"\(self.Cpf)",
+        "Estado":"\(self.Estado)",
+        "Cidade":"\(self.Cidade)",
+        "InfoImportante":"\(self.InfoImportantes)",
+        "Dados":self.Dado.GetJson()
+        ]
+    }
+    
+    
     
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Alergias:DadosUsuario {
+class Alergias:DadosUsuario,Jsivis {
     
     var Tipo: String
     var Desc: String
@@ -37,5 +37,22 @@ class Alergias:DadosUsuario {
     func getNome () -> String {
         return Tipo
     }
+    
+    func GetJson() -> [String : Any] {
+
+        
+        return [
+            "Tipo": "\(self.Tipo)",
+            "Causas": self.Causas,
+            "Desc": "\(self.Desc)"
+            
+        ]
+    }
+    
+    
+    
+
+    
+    
 }
 
