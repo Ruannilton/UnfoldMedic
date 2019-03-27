@@ -80,5 +80,26 @@ class Usuario : Jsivis{
     }
     
     
+    func GetJsonUpdate()-> [String : Any] {
+        return [
+            "_id": "\(self._id)",
+            "_rev": "\(self._rev)",
+            "Nome":"\(self.Nome)",
+            "Nascimento":"\(self.DataNasc)",
+            "TipoSanguineo":"\(self.TipoSanguineo)",
+            "TipoConta":"\(self.TipoConta)",
+            "Login":"\(self.Login)",
+            "Senha":"\(self.Senha)",
+            "Sexo":"\(self.Sexo)",
+            "Cpf":"\(self.Cpf)",
+            "Estado":"\(self.Estado)",
+            "Cidade":"\(self.Cidade)",
+            "InfoImportante":"\(self.InfoImportantes)",
+            "Dados":self.Dado.GetJson()
+        ]
+    }
+
+    
+    
     
 }

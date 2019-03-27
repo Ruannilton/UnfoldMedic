@@ -20,11 +20,14 @@ class TelaLoginPacienteViewController: UIViewController {
         //Database.Limpar()v
       
         //Funcao certa get//getAll.get{(usuario) in Database.Load(dados: usuario[2].Dado) }
-        getAll.get{(usuario) in postUser.post(pUser: usuario[2]) }
-        
-        
-        
-      //  getAll.get{(usuario) in print(usuario[0].Nome) }
+     //   getAll.get{(usuario) in postUser.post(pUser: usuario[2]) }
+        var y = [Usuario]()
+        getAll.get{(usuario) in y = usuario
+        y[2].Nome = "XXXXTentani"
+        y[2].Estado = "JORGEEEE"
+        postUser.post(pUser: y[2])
+        }
+       //  getAll.get{(usuario) in print(usuario[0].Nome) }
        // getName.get(Nome: "jorge", callback: {(usuario) in print(usuario.Nome) })
             //{ (usuario) in
             //print(usuario.Nome)}
