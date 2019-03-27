@@ -9,7 +9,7 @@
 import Foundation
 
 class Usuario{
-    
+    /*
     let _id: String
     let _rev: String
     
@@ -23,12 +23,16 @@ class Usuario{
     let Cpf: String
     var Cidade:String
     var Estado: String
+    */
     var Dado: Dados
     
     
    /* init(Nome: String, DataNasc: Date, TipoSanguineo: String, TipoConta: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String, _id: String, _rev: String) {*/
     init(json: [String: AnyObject]){
         
+         self.Dado = Dados(json: json)
+        
+        /*
         self.Nome = json["Nome"] as? String ?? ""
         self.DataNasc = json["Nascimento"] as? Date ?? Date()
         self.TipoSanguineo = json["TipoSanguineo"] as? String ?? ""
@@ -42,10 +46,11 @@ class Usuario{
         self._id = json["_id"] as? String ?? ""
         self._rev = json["_rev"] as? String ?? ""
        
-        
-        self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
-        print(Dado.ListaDoencas.count)
-       // Database.Load(dados: Dado)
+        */
+       
+       //self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
+
+       //Database.Load(dados: Dado)
   
         /*self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)*/
       /*  self.Nome = "aa"

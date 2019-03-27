@@ -13,7 +13,8 @@ class TelaPerfilViewController: UIViewController {
 
     @IBOutlet weak var lable_name: UILabel!
     
-    @IBOutlet weak var label_estado: UIStackView!
+    
+    @IBOutlet weak var label_estado: UILabel!
     
     @IBOutlet weak var label_cidade: UILabel!
    
@@ -21,7 +22,11 @@ class TelaPerfilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lable_name.text = Database.dados.Nome
+        label_idade.text = String(describing: Database.dados.DataNasc)
+        label_estado.text = Database.dados.Estado
+        label_cidade.text = Database.dados.Cidade
+        
         // Do any additional setup after loading the view.
     }
 

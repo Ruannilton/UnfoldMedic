@@ -10,6 +10,20 @@ import Foundation
 
 class Dados{
     
+      var _id: String
+      var _rev: String
+    
+      var Nome: String
+      var DataNasc: Date
+      var TipoSanguineo: String
+      var TipoConta: String
+      var Login: String
+      var Senha: String
+      var Sexo: String
+      var Cpf: String
+      var Cidade:String
+      var Estado: String
+    
       var ListaVacinas = [Vacinas]()
       var ListaCirurgias = [Cirurgias]()
       var ListaMedicamentos = [Medicamentos]()
@@ -29,50 +43,79 @@ class Dados{
     }
     */
     init(){
+        _id = ""
+        _rev = ""
+        Nome = ""
+        DataNasc = Date()
+        TipoSanguineo = ""
+        TipoConta = ""
+        Login = ""
+        Senha = ""
+        Sexo = ""
+        Cpf = ""
+        Cidade = ""
+        Estado = ""
+        
     }
     init(json: [String: AnyObject]){
+        
+        self.Nome = json["Nome"] as? String ?? ""
+        self.DataNasc = json["Nascimento"] as? Date ?? Date()
+        self.TipoSanguineo = json["TipoSanguineo"] as? String ?? ""
+        self.TipoConta = json["TipoConta"] as? String ?? ""
+        self.Login = json["Login"] as? String ?? ""
+        self.Senha = json["Senha"] as? String ?? ""
+        self.Sexo = json["Sexo"] as? String ?? ""
+        self.Cpf = json["Cpf"] as? String ?? ""
+        self.Cidade = json["Cidade"] as? String ?? ""
+        self.Estado = json["Estado"] as? String ?? ""
+        self._id = json["_id"] as? String ?? ""
+        self._rev = json["_rev"] as? String ?? ""
+
+        var dad = (json["Dados"] as? [ String: AnyObject])! as [String: AnyObject]
+        
         //Vacinas
-        if let  vet = json["Vacinas"] as? [ [String: AnyObject] ] {
+        if let  vet = dad["Vacinas"] as? [ [String: AnyObject] ] {
             for jsonCel in vet {
                 let x = Vacinas(json: jsonCel)
                ListaVacinas.append(x)
             }}
         
         //Cirurgias
-        if let  vet = json["Cirurgias"] as? [ [String: AnyObject] ] {
+        if let  vet = dad["Cirurgias"] as? [ [String: AnyObject] ] {
             for jsonCel in vet {
                 let x = Cirurgias(json: jsonCel)
                 ListaCirurgias.append(x)
             }}
         
         //Medicamento
-        if let  vet = json["Medicamentos"] as? [ [String: AnyObject] ] {
+        if let  vet = dad["Medicamentos"] as? [ [String: AnyObject] ] {
             for jsonCel in vet {
                 let x = Medicamentos(json: jsonCel)
                ListaMedicamentos.append(x)
             }}
         
         //Alergias
-        if let  vet = json["Alergias"] as? [ [String: AnyObject] ] {
+        if let  vet = dad["Alergias"] as? [ [String: AnyObject] ] {
             for jsonCel in vet {
                 let x = Alergias(json: jsonCel)
                 ListaAlergias.append(x)
             }}
         
         //Anamnese
-        if let  vet = json["Anamnese"] as? [ [String: AnyObject] ] {
+        if let  vet = dad["Anamnese"] as? [ [String: AnyObject] ] {
             for jsonCel in vet {
                 let x = Anamnese(json: jsonCel)
                 ListaAnamnese.append(x)
             }}
         //Anamnese
-        if let  vet = json["Doencas"] as? [ [String: AnyObject] ] {
+        if let  vet = dad["Doencas"] as? [ [String: AnyObject] ] {
             for jsonCel in vet {
                 let x = Doencas(json: jsonCel)
                 ListaDoencas.append(x)
             }
             
-            if let  vet = json["DoencasFisicas"] as? [ [String: AnyObject] ] {
+            if let  vet = dad["DoencasFisicas"] as? [ [String: AnyObject] ] {
                 for jsonCel in vet {
                     let x = DoencasFisicas(json: jsonCel)
                     ListaDoencasFisicas.append(x)

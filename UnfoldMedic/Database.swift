@@ -75,7 +75,7 @@ class Database{
     
     public static func Load(dados:Dados)->Void{
         Database.dados = dados;
-        print("Database")
+        print(Database.dados.Nome)
         print(Database.dados.ListaDoencas.count)
     }
     

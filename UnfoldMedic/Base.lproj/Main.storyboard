@@ -208,13 +208,16 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="193" height="20.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Nome:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9m-MK-oql">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="143" height="20.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="56" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="56" id="bcc-b7-bWD"/>
+                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlD-ne-EWf">
-                                                                        <rect key="frame" x="151" y="0.0" width="42" height="20.5"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlD-ne-EWf" userLabel="Label name">
+                                                                        <rect key="frame" x="64" y="0.0" width="129" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -276,13 +279,16 @@
                                                                 <rect key="frame" x="0.0" y="147.5" width="193" height="20.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Número:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlI-Rh-B2r">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="143" height="20.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="20.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="66" id="apK-cU-eAb"/>
+                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLK-pr-w76">
-                                                                        <rect key="frame" x="151" y="0.0" width="42" height="20.5"/>
+                                                                        <rect key="frame" x="74" y="0.0" width="119" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -327,7 +333,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="NN8-n6-3Et"/>
                     <connections>
                         <outlet property="label_cidade" destination="d40-1N-Hga" id="1SX-bd-uX3"/>
-                        <outlet property="label_estado" destination="aXg-Vz-WSQ" id="AV6-P0-op6"/>
+                        <outlet property="label_estado" destination="Cc8-om-0kd" id="uW0-0L-cgK"/>
                         <outlet property="label_idade" destination="6Ur-ml-LiU" id="chA-ux-dxV"/>
                         <outlet property="label_numero" destination="hLK-pr-w76" id="ePn-AP-cf1"/>
                         <outlet property="lable_name" destination="rlD-ne-EWf" id="ObX-yY-3Gb"/>
