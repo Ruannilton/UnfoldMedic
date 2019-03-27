@@ -17,7 +17,9 @@ class TelaLoginPacienteViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        getAll.get{(usuario) in var pessoa = (usuario[0])}
+        //Database.Limpar()
+        getAll.get{(usuario) in Database.Load(dados: usuario[2].Dado)}
+        
         
         
       //  getAll.get{(usuario) in print(usuario[0].Nome) }

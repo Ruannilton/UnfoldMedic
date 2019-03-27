@@ -33,15 +33,9 @@ class DadosCard{
 
 class Database{
 
-    static var ListaVacinas = [Vacinas]()
-    static var ListaCirurgias = [Cirurgias]()
-    static var ListaMedicamentos = [Medicamentos]()
-    static var ListaAlergias = [Alergias]()
-    static var ListaDoencasFisicas = [DoencasFisicas]()
-    static var ListaAnamnese = [Anamnese]()
-    static var ListaDoencas = [Doencas]()
+    static var dados = Dados()
     
-
+    
     
     public static func getDadosCard()->[DadosCard]{
     
@@ -55,73 +49,54 @@ class Database{
         DadosCard(nome: "Medicamentos", subs: "Suas medicamentos", tipo: DataType.Medicamentos)
         ]
     }
+    /*
+    public static func Limpar()->Void{
+        ListaMedicamentos.removeAll()
+        ListaAnamnese.removeAll()
+        ListaDoencas.removeAll()
+        ListaDoencasFisicas.removeAll()
+        ListaAlergias.removeAll()
+        ListaCirurgias.removeAll()
+        ListaVacinas.removeAll()
+    }
+    
+    public static func Load(dados:Dados)->Void{
+        
+        ListaVacinas.insert(contentsOf: dados.ListaVacinas, at: 0)
+        ListaCirurgias.insert(contentsOf: dados.ListaCirurgias, at: 0)
+        ListaMedicamentos.insert(contentsOf: dados.ListaMedicamentos, at: 0)
+        ListaAlergias.insert(contentsOf: dados.ListaAlergias, at: 0)
+        ListaAnamnese.insert(contentsOf: dados.ListaAnamnese, at: 0)
+        ListaDoencasFisicas.insert(contentsOf: dados.ListaDoencasFisicas, at: 0)
+        ListaDoencas.insert(contentsOf: dados.ListaDoencas, at: 0)
+        
+        print(ListaVacinas.count)
+    }*/
+    
+    public static func Load(dados:Dados)->Void{
+        Database.dados = dados;
+        print("Database")
+        print(Database.dados.ListaDoencas.count)
+    }
     
     public static func getDadosUsuario(tipo:DataType)->[DadosUsuario]{
         switch tipo {
         case .Alergia:
-            return ListaAlergias
+            return dados.ListaAlergias
         case .Anamnese:
-            return ListaAnamnese
+            return dados.ListaAnamnese
         case .Cirurgia:
-            return ListaCirurgias
+            return dados.ListaCirurgias
         case .Doenca:
-            return ListaDoencas
+            return dados.ListaDoencas
         case .DoencaFisica:
-            return ListaDoencasFisicas
+            return dados.ListaDoencasFisicas
         case .Vacina:
-            return ListaVacinas
+            return dados.ListaVacinas
         case .Medicamentos:
-            return ListaMedicamentos
+            return dados.ListaMedicamentos
     
-        default:
-            return ListaAlergias
-            
         }
-        
-    }
-    
-       public static func Load(json: [String: AnyObject])->Void{
-        //Vacinas
-        if let  vet = json["Doencas"] as? [ [String: AnyObject] ] {
-            for jsonCel in vet {
-                let x = Doencas(json: jsonCel)
-                ListaDoencas.append(x)
-            }}
-
-        //Vacinas
-        if let  vet = json["Vacinas"] as? [ [String: AnyObject] ] {
-            for jsonCel in vet {
-                let x = Vacinas(json: jsonCel)
-                ListaVacinas.append(x)
-            }}
-        
-        //Cirurgias
-        if let  vet = json["Cirurgias"] as? [ [String: AnyObject] ] {
-            for jsonCel in vet {
-                let x = Cirurgias(json: jsonCel)
-                ListaCirurgias.append(x)
-            }}
-        
-        //Medicamento
-        if let  vet = json["Medicamentos"] as? [ [String: AnyObject] ] {
-            for jsonCel in vet {
-                let x = Medicamentos(json: jsonCel)
-                ListaMedicamentos.append(x)
-            }}
-        
-        //Alergias
-        if let  vet = json["Alergias"] as? [ [String: AnyObject] ] {
-            for jsonCel in vet {
-                let x = Alergias(json: jsonCel)
-                ListaAlergias.append(x)
-            }}
-        
-        //Anamnese
-        if let  vet = json["Anamnese"] as? [ [String: AnyObject] ] {
-            for jsonCel in vet {
-                let x = Anamnese(json: jsonCel)
-                ListaAnamnese.append(x)
-            }}
         
         
     }
