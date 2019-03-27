@@ -102,3 +102,8 @@ class Database{
     }
     
 }
+
+
+/*protocol Jsivis {
+    requirements
+}*/

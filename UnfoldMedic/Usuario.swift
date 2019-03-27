@@ -24,7 +24,7 @@ class Usuario{
     var Cidade:String
     var Estado: String
     var Dado: Dados
-    
+    var InfoImportantes: String
     
    /* init(Nome: String, DataNasc: Date, TipoSanguineo: String, TipoConta: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String, _id: String, _rev: String) {*/
     init(json: [String: AnyObject]){
@@ -41,7 +41,7 @@ class Usuario{
         self.Estado = json["Estado"] as? String ?? ""
         self._id = json["_id"] as? String ?? ""
         self._rev = json["_rev"] as? String ?? ""
-       
+        self.InfoImportantes = json["InfoImportante"] as? String ?? ""
         
         self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
         print(Dado.ListaDoencas.count)
