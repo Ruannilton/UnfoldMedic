@@ -22,6 +22,7 @@ class TelaLoginPacienteViewController: UIViewController {
         
         
         
+        
       //  getAll.get{(usuario) in print(usuario[0].Nome) }
        // getName.get(Nome: "jorge", callback: {(usuario) in print(usuario.Nome) })
             //{ (usuario) in
