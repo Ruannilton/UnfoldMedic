@@ -17,8 +17,10 @@ class TelaLoginPacienteViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        //Database.Limpar()
-        getAll.get{(usuario) in Database.Load(dados: usuario[2].Dado)}
+        //Database.Limpar()v
+      
+        //Funcao certa get//getAll.get{(usuario) in Database.Load(dados: usuario[2].Dado) }
+        getAll.get{(usuario) in postUser.post(pUser: usuario[2]) }
         
         
         
