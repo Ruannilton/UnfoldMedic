@@ -15,8 +15,6 @@ class postUser{
         let parameters = pUser.GetJson()
         
         
-        
-        
         guard let url = URL(string: "https://celularesbessa.mybluemix.net/unfold/Post") else {return}
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
