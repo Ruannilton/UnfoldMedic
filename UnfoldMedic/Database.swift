@@ -34,7 +34,11 @@ class DadosCard{
 class Database{
 
     static var dados = Dados()
-    
+    static var mostraNome = true
+    static var mostraData = true
+    static var mostraEstado = true
+    static var mostraCidade = true
+    static var mostraInfo = true
     
     
     public static func getDadosCard()->[DadosCard]{
