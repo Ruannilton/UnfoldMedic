@@ -117,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="1820" y="1774.3628185907048"/>
         </scene>
-        <!--Item 1-->
+        <!--Tela Perfil View Controller-->
         <scene sceneID="6SQ-LK-O9N">
             <objects>
                 <viewController id="iT5-lA-1ty" customClass="TelaPerfilViewController" customModule="UnfoldMedic" customModuleProvider="target" sceneMemberID="viewController">
@@ -279,7 +279,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="WBC-ri-nro" secondAttribute="trailing" constant="8" id="brF-OZ-O10"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="NN8-n6-3Et"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="NN8-n6-3Et"/>
                     <connections>
                         <outlet property="ImageView" destination="waO-ZS-rRj" id="KqB-BQ-E2Z"/>
                         <outlet property="InfoImportante_textBOx" destination="atv-jn-5TQ" id="DoT-Mo-lEi"/>
@@ -749,11 +749,11 @@
             </objects>
             <point key="canvasLocation" x="2712.8000000000002" y="187.55622188905548"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Hb2-qb-XT8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UGz-yT-b3M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p8W-d4-NAN"/>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="p8W-d4-NAN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="10B-n7-FWj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -787,11 +787,11 @@
             </objects>
             <point key="canvasLocation" x="880.79999999999995" y="1774.3628185907048"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="aih-Zf-mpN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rx9-P2-A5U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LCB-CC-CVu"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="LCB-CC-CVu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TgH-ji-o3c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -983,7 +983,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YBJ-19-TDu"/>
-        <segue reference="wRS-Ro-fQb"/>
-        <segue reference="SXt-Nf-qvi"/>
+        <segue reference="SEk-PH-7BX"/>
+        <segue reference="jT9-K8-R3u"/>
     </inferredMetricsTieBreakers>
 </document>
