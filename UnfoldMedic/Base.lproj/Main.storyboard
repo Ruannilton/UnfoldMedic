@@ -286,7 +286,7 @@
                         <outlet property="label_estado" destination="Cc8-om-0kd" id="uW0-0L-cgK"/>
                         <outlet property="label_idade" destination="6Ur-ml-LiU" id="chA-ux-dxV"/>
                         <outlet property="label_numero" destination="hLK-pr-w76" id="ePn-AP-cf1"/>
-                        <outlet property="lable_name" destination="rlD-ne-EWf" id="ObX-yY-3Gb"/>
+                        <outlet property="lable_name" destination="rlD-ne-EWf" id="N42-gk-3hz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSZ-xu-oJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -632,8 +632,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="iT5-lA-1ty" kind="relationship" relationship="viewControllers" id="SEk-PH-7BX"/>
                         <segue destination="UGz-yT-b3M" kind="relationship" relationship="viewControllers" id="YBJ-19-TDu"/>
+                        <segue destination="iT5-lA-1ty" kind="relationship" relationship="viewControllers" id="SEk-PH-7BX"/>
                         <segue destination="rx9-P2-A5U" kind="relationship" relationship="viewControllers" id="jT9-K8-R3u"/>
                     </connections>
                 </tabBarController>
@@ -753,7 +753,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UGz-yT-b3M" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="p8W-d4-NAN"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="10B-n7-FWj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="10B-n7-FWj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -772,7 +772,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JNT-A4-Qzd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="PbI-IY-w9K"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="N26-hN-98y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N26-hN-98y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -791,7 +791,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rx9-P2-A5U" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="LCB-CC-CVu"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="TgH-ji-o3c">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TgH-ji-o3c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

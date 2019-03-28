@@ -11,8 +11,8 @@ import UIKit
 class TelaPerfilViewController: UIViewController {
     @IBOutlet weak var label_idade: UILabel!
 
+   
     @IBOutlet weak var lable_name: UILabel!
-    
     
     @IBOutlet weak var label_estado: UILabel!
     
@@ -20,16 +20,27 @@ class TelaPerfilViewController: UIViewController {
    
     @IBOutlet weak var label_numero: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let x = Database.getdados()
+        print("AAaaaaaaaa")
+            /*  lable_name.text = Database.dados.Nome
+        label_idade.text = String(describing: Database.dados.DataNasc)
+        label_estado.text = Database.dados.Estado
+        label_cidade.text = Database.dados.Cidade
+        */
+        // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
         lable_name.text = Database.dados.Nome
         label_idade.text = String(describing: Database.dados.DataNasc)
         label_estado.text = Database.dados.Estado
         label_cidade.text = Database.dados.Cidade
-        
-        // Do any additional setup after loading the view.
-    }
 
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

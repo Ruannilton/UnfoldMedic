@@ -60,6 +60,7 @@ class Dados : Jsivis{
     init(json: [String: AnyObject]){
         
         self.Nome = json["Nome"] as? String ?? ""
+      //  print(json["Nome"] as? String ?? "")
         self.DataNasc = json["Nascimento"] as? Date ?? Date()
         self.TipoSanguineo = json["TipoSanguineo"] as? String ?? ""
         self.TipoConta = json["TipoConta"] as? String ?? ""

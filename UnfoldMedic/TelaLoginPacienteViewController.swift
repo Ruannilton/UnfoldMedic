@@ -35,6 +35,11 @@ class TelaLoginPacienteViewController: UIViewController {
         
         
     }
+    
+    override func touchesBegan(_ touches:Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()

@@ -107,7 +107,6 @@
 				3F00858E22443B8800F2679B /* Assets.xcassets */,
 				3F00859022443B8800F2679B /* LaunchScreen.storyboard */,
 				3F00859322443B8800F2679B /* Info.plist */,
-				3F7D0F92224C3E7D00BEC7E1 /* Req_Update.swift */,
 			);
 			path = UnfoldMedic;
 			sourceTree = "<group>";
@@ -197,6 +196,7 @@
 				TargetAttributes = {
 					3F00858322443B8800F2679B = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3TU87AWYLQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -239,7 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA43C5022499FA000580AFC /* CardDadosTableViewCell.swift in Sources */,
-				3F7D0F93224C3E7D00BEC7E1 /* Req_Update.swift in Sources */,
 				3FA43C5A2249A2E400580AFC /* Anamnese.swift in Sources */,
 				3FA43C592249A2E400580AFC /* Alergias.swift in Sources */,
 				3F907A9D224C305B00C0FC47 /* CadastroViewController.swift in Sources */,
@@ -384,7 +383,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TU87AWYLQ;
 				INFOPLIST_FILE = UnfoldMedic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.UnfoldMedic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,7 +397,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TU87AWYLQ;
 				INFOPLIST_FILE = UnfoldMedic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.UnfoldMedic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
