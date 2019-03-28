@@ -27,6 +27,7 @@ class TelaPerfilViewController: UIViewController {
         label_estado.text = Database.dados.Estado
         label_cidade.text = Database.dados.Cidade
         
+        
         // Do any additional setup after loading the view.
     }
 

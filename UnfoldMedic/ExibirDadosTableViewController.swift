@@ -75,6 +75,11 @@ class ExibirDadosTableViewController: UITableViewController {
 
     }
     */
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+       
+       // print(self.dadosAExibir[indexPath.row].getNome())
+       
+    }
 
     /*
     // Override to support conditional rearranging of the table view.
@@ -84,14 +89,15 @@ class ExibirDadosTableViewController: UITableViewController {
     }
     */
 
-    /*
+ /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        print(tableView.indexPathForSelectedRow?.row)
     }
-    */
-
+    
+*/
 }

@@ -11,7 +11,7 @@ import UIKit
 class DadosUsuarioTableViewCell: UITableViewCell {
 
     @IBOutlet weak var LabelNome: UILabel!
-    /*
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +20,7 @@ class DadosUsuarioTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        print(LabelNome.text)
     }
-*/
+
 }
