@@ -11,6 +11,8 @@
 		3F00858D22443B8800F2679B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F00858B22443B8800F2679B /* Main.storyboard */; };
 		3F00858F22443B8800F2679B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F00858E22443B8800F2679B /* Assets.xcassets */; };
 		3F00859222443B8800F2679B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F00859022443B8800F2679B /* LaunchScreen.storyboard */; };
+		3F0FE1E1224C3A45000EA817 /* fotoDeJafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F0FE1E0224C3A45000EA817 /* fotoDeJafe.jpg */; };
+		3F0FE1E4224C41BE000EA817 /* TelaConfiguracaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FE1E3224C41BE000EA817 /* TelaConfiguracaoViewController.swift */; };
 		3F5E4A1E224ADBA900006226 /* Req_GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E4A1C224ADBA900006226 /* Req_GetAll.swift */; };
 		3F5E4A1F224ADBA900006226 /* Req_Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E4A1D224ADBA900006226 /* Req_Post.swift */; };
 		3F5E4A21224ADBB300006226 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E4A20224ADBB300006226 /* Usuario.swift */; };
@@ -39,6 +41,8 @@
 		3F00858E22443B8800F2679B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F00859122443B8800F2679B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F00859322443B8800F2679B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0FE1E0224C3A45000EA817 /* fotoDeJafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fotoDeJafe.jpg; sourceTree = "<group>"; };
+		3F0FE1E3224C41BE000EA817 /* TelaConfiguracaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaConfiguracaoViewController.swift; sourceTree = "<group>"; };
 		3F5E4A1C224ADBA900006226 /* Req_GetAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Req_GetAll.swift; sourceTree = "<group>"; };
 		3F5E4A1D224ADBA900006226 /* Req_Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Req_Post.swift; sourceTree = "<group>"; };
 		3F5E4A20224ADBB300006226 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		3F00858622443B8800F2679B /* UnfoldMedic */ = {
 			isa = PBXGroup;
 			children = (
+				3F0FE1E2224C3A49000EA817 /* src */,
 				3F5E4A20224ADBB300006226 /* Usuario.swift */,
 				3F5E4A1C224ADBA900006226 /* Req_GetAll.swift */,
 				3F5E4A1D224ADBA900006226 /* Req_Post.swift */,
@@ -102,8 +107,17 @@
 				3F00858E22443B8800F2679B /* Assets.xcassets */,
 				3F00859022443B8800F2679B /* LaunchScreen.storyboard */,
 				3F00859322443B8800F2679B /* Info.plist */,
+				3F7D0F92224C3E7D00BEC7E1 /* Req_Update.swift */,
 			);
 			path = UnfoldMedic;
+			sourceTree = "<group>";
+		};
+		3F0FE1E2224C3A49000EA817 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3F0FE1E0224C3A45000EA817 /* fotoDeJafe.jpg */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 		3F75D2E922459B490038EA50 /* ViewControllers */ = {
@@ -111,6 +125,7 @@
 			children = (
 				3F75D2EC22459DEF0038EA50 /* TelaPerfilViewController.swift */,
 				3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */,
+				3F0FE1E3224C41BE000EA817 /* TelaConfiguracaoViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0FE1E1224C3A45000EA817 /* fotoDeJafe.jpg in Resources */,
 				3F00859222443B8800F2679B /* LaunchScreen.storyboard in Resources */,
 				3F00858F22443B8800F2679B /* Assets.xcassets in Resources */,
 				3F00858D22443B8800F2679B /* Main.storyboard in Resources */,
@@ -223,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA43C5022499FA000580AFC /* CardDadosTableViewCell.swift in Sources */,
+				3F7D0F93224C3E7D00BEC7E1 /* Req_Update.swift in Sources */,
 				3FA43C5A2249A2E400580AFC /* Anamnese.swift in Sources */,
 				3FA43C592249A2E400580AFC /* Alergias.swift in Sources */,
 				3F907A9D224C305B00C0FC47 /* CadastroViewController.swift in Sources */,
@@ -238,6 +255,7 @@
 				3FA43C5E2249A2E400580AFC /* DoencasFisicas.swift in Sources */,
 				3FA43C5F2249A2E400580AFC /* Medicamentos.swift in Sources */,
 				3F00858822443B8800F2679B /* AppDelegate.swift in Sources */,
+				3F0FE1E4224C41BE000EA817 /* TelaConfiguracaoViewController.swift in Sources */,
 				3F5E4A1E224ADBA900006226 /* Req_GetAll.swift in Sources */,
 				3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */,
 				3F5E4A1F224ADBA900006226 /* Req_Post.swift in Sources */,

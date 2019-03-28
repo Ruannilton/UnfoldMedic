@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Doencas :DadosUsuario{
+class Doencas :DadosUsuario,Jsivis{
     var Nome: String
     var Desc: String
     
@@ -24,4 +24,15 @@ class Doencas :DadosUsuario{
         self.Nome = json["Nome"] as? String ?? ""
         self.Desc = json["Desc"] as? String ?? ""
     }
+    
+    func GetJson() -> [String : Any] {
+        
+        
+        return [
+            "Nome": "\(self.Nome)",
+            "Desc": "\(self.Desc)"
+            
+        ]
+    }
+
 }

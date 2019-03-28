@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Anamnese:DadosUsuario{
+class Anamnese:DadosUsuario,Jsivis{
    
     var Data: Date
     var Local: String
@@ -34,5 +34,20 @@ class Anamnese:DadosUsuario{
             self.Hma = json["Hma"] as? String ?? ""
             self.InterSis = json["InterSis"] as? String ?? ""
         }
+    
+    
+    func GetJson() -> [String : Any] {
+        
+        
+        return [
+            "Data": "\(self.Data)",
+            "Local": "\(self.Local)",
+            "QueixaPrincipal": "\(self.QueixaPrincipal)",
+            "Hma": "\(self.Hma)",
+            "InterSis": "\(self.InterSis)"
+            
+        ]
+    }
+
     
 }
