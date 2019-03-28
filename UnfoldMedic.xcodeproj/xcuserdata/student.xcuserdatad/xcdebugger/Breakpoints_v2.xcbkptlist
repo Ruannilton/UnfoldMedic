@@ -26,12 +26,12 @@
                   moduleName = "UnfoldMedic"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Documents/GitHub/UnfoldMedic/UnfoldMedic/Database.swift"
-                  timestampString = "575506491.916821"
+                  timestampString = "575508195.924678"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,12 +41,12 @@
                   moduleName = "UnfoldMedic"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Documents/GitHub/UnfoldMedic/UnfoldMedic/Database.swift"
-                  timestampString = "575506491.9199491"
+                  timestampString = "575508195.927187"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -20,17 +20,14 @@ class TelaPerfilViewController: UIViewController {
    
     @IBOutlet weak var label_numero: UILabel!
     
+    @IBOutlet weak var Label_tipoSanguino: UILabel!
     
+    @IBOutlet weak var InfoImportante_textBOx: UITextView!
+   
+    @IBOutlet weak var ImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let x = Database.getdados()
-        print("AAaaaaaaaa")
-            /*  lable_name.text = Database.dados.Nome
-        label_idade.text = String(describing: Database.dados.DataNasc)
-        label_estado.text = Database.dados.Estado
-        label_cidade.text = Database.dados.Cidade
-        */
-        // Do any additional setup after loading the view.
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +35,11 @@ class TelaPerfilViewController: UIViewController {
         label_idade.text = String(describing: Database.dados.DataNasc)
         label_estado.text = Database.dados.Estado
         label_cidade.text = Database.dados.Cidade
+        InfoImportante_textBOx.text = Database.dados.InfoImportantes
+        Label_tipoSanguino.text = Database.dados.TipoSanguineo
+        if(Database.dados.Nome.contains("jafe") || Database.dados.Nome.contains("Jafe")){
+            ImageView.image = #imageLiteral(resourceName: "fotoDeJafe.jpg")
+        }
 
     }
     

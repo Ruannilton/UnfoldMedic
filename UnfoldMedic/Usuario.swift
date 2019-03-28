@@ -25,8 +25,7 @@ class Usuario : Jsivis{
     var Estado: String
     */
     var Dado: Dados
-    var InfoImportantes: String
-    
+       
    /* init(Nome: String, DataNasc: Date, TipoSanguineo: String, TipoConta: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String, _id: String, _rev: String) {*/
     init(json: [String: AnyObject]){
         
@@ -51,7 +50,6 @@ class Usuario : Jsivis{
        //self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
 
        //Database.Load(dados: Dado)
-        self.InfoImportantes = json["InfoImportante"] as? String ?? ""
         
       //  self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
         print(Dado.ListaDoencas.count)
@@ -84,7 +82,7 @@ class Usuario : Jsivis{
         "Cpf":"\(self.Dado.Cpf)",
         "Estado":"\(self.Dado.Estado)",
         "Cidade":"\(self.Dado.Cidade)",
-        "InfoImportante":"\(self.InfoImportantes)",
+        "InfoImportante":"\(self.Dado.InfoImportantes)",
         "Dados":self.Dado.GetJson()
         ]
     }
@@ -104,7 +102,7 @@ class Usuario : Jsivis{
             "Cpf":"\(self.Dado.Cpf)",
             "Estado":"\(self.Dado.Estado)",
             "Cidade":"\(self.Dado.Cidade)",
-            "InfoImportante":"\(self.InfoImportantes)",
+            "InfoImportante":"\(self.Dado.InfoImportantes)",
             "Dados":self.Dado.GetJson()
         ]
     }
