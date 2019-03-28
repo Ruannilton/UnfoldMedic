@@ -47,13 +47,13 @@ class Usuario : Jsivis{
         self._rev = json["_rev"] as? String ?? ""
        
         */
-       
+       self.Dado = Dados(json:json)
        //self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
 
        //Database.Load(dados: Dado)
         self.InfoImportantes = json["InfoImportante"] as? String ?? ""
         
-        self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
+      //  self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
         print(Dado.ListaDoencas.count)
        // Database.Load(dados: Dado)
   
@@ -74,16 +74,16 @@ class Usuario : Jsivis{
     
     func GetJson() -> [String : Any] {
         return [
-        "Nome":"\(self.Nome)",
-        "Nascimento":"\(self.DataNasc)",
-        "TipoSanguineo":"\(self.TipoSanguineo)",
-        "TipoConta":"\(self.TipoConta)",
-        "Login":"\(self.Login)",
-        "Senha":"\(self.Senha)",
-        "Sexo":"\(self.Sexo)",
-        "Cpf":"\(self.Cpf)",
-        "Estado":"\(self.Estado)",
-        "Cidade":"\(self.Cidade)",
+        "Nome":"\(self.Dado.Nome)",
+        "Nascimento":"\(self.Dado.DataNasc)",
+        "TipoSanguineo":"\(self.Dado.TipoSanguineo)",
+        "TipoConta":"\(self.Dado.TipoConta)",
+        "Login":"\(self.Dado.Login)",
+        "Senha":"\(self.Dado.Senha)",
+        "Sexo":"\(self.Dado.Sexo)",
+        "Cpf":"\(self.Dado.Cpf)",
+        "Estado":"\(self.Dado.Estado)",
+        "Cidade":"\(self.Dado.Cidade)",
         "InfoImportante":"\(self.InfoImportantes)",
         "Dados":self.Dado.GetJson()
         ]
@@ -92,18 +92,18 @@ class Usuario : Jsivis{
     
     func GetJsonUpdate()-> [String : Any] {
         return [
-            "_id": "\(self._id)",
-            "_rev": "\(self._rev)",
-            "Nome":"\(self.Nome)",
-            "Nascimento":"\(self.DataNasc)",
-            "TipoSanguineo":"\(self.TipoSanguineo)",
-            "TipoConta":"\(self.TipoConta)",
-            "Login":"\(self.Login)",
-            "Senha":"\(self.Senha)",
-            "Sexo":"\(self.Sexo)",
-            "Cpf":"\(self.Cpf)",
-            "Estado":"\(self.Estado)",
-            "Cidade":"\(self.Cidade)",
+            "_id": "\(self.Dado._id)",
+            "_rev": "\(self.Dado._rev)",
+            "Nome":"\(self.Dado.Nome)",
+            "Nascimento":"\(self.Dado.DataNasc)",
+            "TipoSanguineo":"\(self.Dado.TipoSanguineo)",
+            "TipoConta":"\(self.Dado.TipoConta)",
+            "Login":"\(self.Dado.Login)",
+            "Senha":"\(self.Dado.Senha)",
+            "Sexo":"\(self.Dado.Sexo)",
+            "Cpf":"\(self.Dado.Cpf)",
+            "Estado":"\(self.Dado.Estado)",
+            "Cidade":"\(self.Dado.Cidade)",
             "InfoImportante":"\(self.InfoImportantes)",
             "Dados":self.Dado.GetJson()
         ]

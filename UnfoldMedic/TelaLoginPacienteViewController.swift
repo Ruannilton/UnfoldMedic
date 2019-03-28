@@ -20,7 +20,7 @@ class TelaLoginPacienteViewController: UIViewController {
         var Confirmacao = false
         getAll.get{(usuario) in
             for user in usuario{
-                if(user.Login == login && user.Senha == senha){
+                if(user.Dado.Login == login && user.Dado.Senha == senha){
                     Confirmacao = true
                     Database.Load(dados: user.Dado)
                     break;
