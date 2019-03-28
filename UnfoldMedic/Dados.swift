@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Dados{
+class Dados : Jsivis{
     
       var _id: String
       var _rev: String
@@ -125,5 +125,57 @@ class Dados{
         }
         
     }
+    
+ 
+    func GetJson() -> [String : Any] {
+        
+        var doenca = [[String:Any]]()
+        var cirurgias = [[String:Any]]()
+        var medic = [[String:Any]]()
+        var vacina = [[String:Any]]()
+        var doencfisica = [[String:Any]]()
+        var alergia = [[String:Any]]()
+        var anaminese = [[String:Any]]()
+        //fill array
+        for x in ListaDoencas{
+            doenca.append(x.GetJson())
+        }
+        for x in ListaCirurgias{
+            cirurgias.append(x.GetJson())
+        }
+        for x in ListaMedicamentos{
+            medic.append(x.GetJson())
+        }
+        for x in ListaVacinas{
+            vacina.append(x.GetJson())
+        }
+        for x in ListaDoencasFisicas{
+            doencfisica.append(x.GetJson())
+        }
+        for x in ListaAlergias{
+            alergia.append(x.GetJson())
+        }
+        for x in ListaAnamnese{
+            anaminese.append(x.GetJson())
+        }
+        
+        
+        
+        
+        return [
+            "Doencas":doenca,
+            "Vacinas":vacina,
+            "Cirurgias":cirurgias,
+            "Medicamentos":medic,
+            "Alergias":alergia,
+            "DoencasFisicas":doencfisica,
+            "Anamnese":anaminese
+           
+        ]
+    }
+    
+
+    
+    
 }
 

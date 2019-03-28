@@ -1,23 +1,23 @@
 //
-//  Req_Post.swift
+//  Req_Update.swift
 //  UnfoldMedic
 //
-//  Created by student on 26/03/19.
+//  Created by student on 27/03/19.
 //  Copyright © 2019 student. All rights reserved.
 //
 
 import Foundation
-
-
-class postUser{
+class UpdateUser{
     //funcioando
-    static func post(pUser:Usuario ){
-        let parameters = pUser.GetJson()
+    static func Update(pUser:Usuario ){
+        let parameters = pUser.GetJsonUpdate()
         
         
-        guard let url = URL(string: "https://celularesbessa.mybluemix.net/unfold/Post") else {return}
+        
+        
+        guard let url = URL(string: "https://celularesbessa.mybluemix.net/unfold/update") else {return}
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = "PUT"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         guard  let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else{return}
         request.httpBody = httpBody
@@ -33,18 +33,18 @@ class postUser{
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     print(json)
                 }catch{
-                print(error)
+                    print(error)
                 }
-            
+                
             }
-        }.resume()
+            }.resume()
         
         
         
         
     }
-
-
-
-
+    
+    
+    
+    
 }

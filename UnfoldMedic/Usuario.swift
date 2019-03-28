@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Usuario{
+class Usuario : Jsivis{
     /*
     let _id: String
     let _rev: String
@@ -25,7 +25,7 @@ class Usuario{
     var Estado: String
     */
     var Dado: Dados
-    
+    var InfoImportantes: String
     
    /* init(Nome: String, DataNasc: Date, TipoSanguineo: String, TipoConta: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String, _id: String, _rev: String) {*/
     init(json: [String: AnyObject]){
@@ -51,6 +51,11 @@ class Usuario{
        //self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
 
        //Database.Load(dados: Dado)
+        self.InfoImportantes = json["InfoImportante"] as? String ?? ""
+        
+        self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)
+        print(Dado.ListaDoencas.count)
+       // Database.Load(dados: Dado)
   
         /*self.Dado = Dados(json: (json["Dados"] as? [ String: AnyObject])!)*/
       /*  self.Nome = "aa"
@@ -66,5 +71,45 @@ class Usuario{
         self._id = "a"
         self._rev = "a"*/
     }
+    
+    func GetJson() -> [String : Any] {
+        return [
+        "Nome":"\(self.Nome)",
+        "Nascimento":"\(self.DataNasc)",
+        "TipoSanguineo":"\(self.TipoSanguineo)",
+        "TipoConta":"\(self.TipoConta)",
+        "Login":"\(self.Login)",
+        "Senha":"\(self.Senha)",
+        "Sexo":"\(self.Sexo)",
+        "Cpf":"\(self.Cpf)",
+        "Estado":"\(self.Estado)",
+        "Cidade":"\(self.Cidade)",
+        "InfoImportante":"\(self.InfoImportantes)",
+        "Dados":self.Dado.GetJson()
+        ]
+    }
+    
+    
+    func GetJsonUpdate()-> [String : Any] {
+        return [
+            "_id": "\(self._id)",
+            "_rev": "\(self._rev)",
+            "Nome":"\(self.Nome)",
+            "Nascimento":"\(self.DataNasc)",
+            "TipoSanguineo":"\(self.TipoSanguineo)",
+            "TipoConta":"\(self.TipoConta)",
+            "Login":"\(self.Login)",
+            "Senha":"\(self.Senha)",
+            "Sexo":"\(self.Sexo)",
+            "Cpf":"\(self.Cpf)",
+            "Estado":"\(self.Estado)",
+            "Cidade":"\(self.Cidade)",
+            "InfoImportante":"\(self.InfoImportantes)",
+            "Dados":self.Dado.GetJson()
+        ]
+    }
+
+    
+    
     
 }

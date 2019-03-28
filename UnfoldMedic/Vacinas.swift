@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Vacinas:DadosUsuario{
+class Vacinas:DadosUsuario,Jsivis{
 
     var Nome: String
     var Data: Date
@@ -27,4 +27,16 @@ class Vacinas:DadosUsuario{
         self.Data =  json["Data"] as? Date ?? Date()
         self.Desc =  json["Desc"] as? String ?? ""
     }
+    
+    func GetJson() -> [String : Any] {
+        
+        
+        return [
+            "Nome": "\(self.Nome)",
+            "Data": "\(self.Data)",
+            "Desc": "\(self.Desc)"
+            
+        ]
+    }
+
 }

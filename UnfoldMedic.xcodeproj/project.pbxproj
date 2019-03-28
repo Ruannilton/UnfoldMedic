@@ -107,6 +107,7 @@
 				3F00858E22443B8800F2679B /* Assets.xcassets */,
 				3F00859022443B8800F2679B /* LaunchScreen.storyboard */,
 				3F00859322443B8800F2679B /* Info.plist */,
+				3F7D0F92224C3E7D00BEC7E1 /* Req_Update.swift */,
 			);
 			path = UnfoldMedic;
 			sourceTree = "<group>";
@@ -238,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA43C5022499FA000580AFC /* CardDadosTableViewCell.swift in Sources */,
+				3F7D0F93224C3E7D00BEC7E1 /* Req_Update.swift in Sources */,
 				3FA43C5A2249A2E400580AFC /* Anamnese.swift in Sources */,
 				3FA43C592249A2E400580AFC /* Alergias.swift in Sources */,
 				3F907A9D224C305B00C0FC47 /* CadastroViewController.swift in Sources */,

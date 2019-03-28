@@ -8,7 +8,7 @@
 
 import Foundation
 
-class  Cirurgias :DadosUsuario{
+class  Cirurgias :DadosUsuario,Jsivis{
     
     var Tipo: String
     var Local: String
@@ -31,4 +31,18 @@ class  Cirurgias :DadosUsuario{
         self.Anestesia = json["Anestesia"] as? Bool ?? true
         self.Desc = json["Desc"] as? String ?? ""
     }
+    
+    func GetJson() -> [String : Any] {
+        
+        
+        return [
+            "Tipo": "\(self.Tipo)",
+            "Local": "\(self.Local)",
+            "Anestesia": self.Anestesia,
+            "Desc": "\(self.Desc)"
+            
+        ]
+    }
+
+    
 }

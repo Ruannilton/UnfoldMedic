@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Medicamentos :DadosUsuario{
+class Medicamentos :DadosUsuario,Jsivis{
  
     var Substancia: String
     var DataInicial: Data
@@ -33,5 +33,20 @@ class Medicamentos :DadosUsuario{
         self.DataInicial = json["DataInicial"] as? Data ?? Data()
         self.Desc = json["Desc"] as? String ?? ""
     }
+    
+    
+    func GetJson() -> [String : Any] {
+        
+        
+        return [
+            "Substancia": "\(self.Substancia)",
+            "DataInicial": "\(self.DataInicial)",
+            "DataFinal": "\(self.DataFinal)",
+            "Desc": "\(self.Desc)"
+            
+        ]
+    }
+    
+
     
 }

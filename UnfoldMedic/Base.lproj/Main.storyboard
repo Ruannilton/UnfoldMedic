@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hg1-0s-7Xd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1815" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hg1-0s-7Xd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -572,7 +572,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="B4n-LR-nvA" userLabel="Login P Stack View">
                                 <rect key="frame" x="24" y="120" width="327" height="425.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNy-WN-6s4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIgite seu Login e Senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNy-WN-6s4">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.49748218487833229" blue="0.31008774648819115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -587,7 +587,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b79-jv-Mxh">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b79-jv-Mxh">
                                                 <rect key="frame" x="0.0" y="45" width="327" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -599,6 +599,7 @@
                                         <rect key="frame" x="0.0" y="395.5" width="327" height="30"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
+                                            <action selector="LoginClick:" destination="uF5-lM-Qk7" eventType="touchUpInside" id="g82-Jd-u34"/>
                                             <segue destination="2SH-II-q3a" kind="show" id="WBW-2T-dRm"/>
                                         </connections>
                                     </button>
@@ -613,7 +614,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textField_login" destination="b79-jv-Mxh" id="KJj-eh-TdI"/>
+                        <outlet property="textField_Login" destination="0Am-nt-ZUb" id="U1Y-7w-Ka1"/>
                         <outlet property="textField_password" destination="b79-jv-Mxh" id="jUe-wC-x72"/>
                     </connections>
                 </viewController>
@@ -752,7 +753,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UGz-yT-b3M" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="p8W-d4-NAN"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="10B-n7-FWj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="10B-n7-FWj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -771,7 +772,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JNT-A4-Qzd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="PbI-IY-w9K"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N26-hN-98y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="N26-hN-98y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -790,7 +791,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rx9-P2-A5U" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="LCB-CC-CVu"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TgH-ji-o3c">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="TgH-ji-o3c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -979,8 +980,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wRS-Ro-fQb"/>
-        <segue reference="SXt-Nf-qvi"/>
-        <segue reference="WES-mH-WPu"/>
+        <segue reference="YBJ-19-TDu"/>
+        <segue reference="SEk-PH-7BX"/>
+        <segue reference="jT9-K8-R3u"/>
     </inferredMetricsTieBreakers>
 </document>
