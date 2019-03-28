@@ -10,23 +10,44 @@ import UIKit
 
 class TelaLoginPacienteViewController: UIViewController {
 
-    @IBOutlet weak var textField_login: UITextField!
     
+    @IBOutlet weak var textField_Login: UITextField!
     @IBOutlet weak var textField_password: UITextField!
     
+    @IBAction func LoginClick(_ sender: UIButton) {
+        let login = textField_Login.text
+        let senha = textField_password.text
+        var Confirmacao = false
+        getAll.get{(usuario) in
+            for user in usuario{
+                if(user.Login == login && user.Senha == senha){
+                    Confirmacao = true
+                    Database.Load(dados: user.Dado)
+                    break;
+                }
+            
+            }
+        
+      //  if(Confirmacao == false)
+        
+        
+        }
+        
+        
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
         //Database.Limpar()v
       
-        //Funcao certa get//getAll.get{(usuario) in Database.Load(dados: usuario[2].Dado) }
-     //   getAll.get{(usuario) in postUser.post(pUser: usuario[2]) }
-        var y = [Usuario]()
+        //Funcao certa get//getAll.get{(usuario) in Database.Load(dados: usuario[2].Dado) }that is a get
+     //   getAll.get{(usuario) in postUser.post(pUser: usuario[2]) }that is a post
+       /* var y = [Usuario]() -- that is a update
         getAll.get{(usuario) in y = usuario
         y[2].Nome = "XXXXTentani"
         y[2].Estado = "JORGEEEE"
         postUser.post(pUser: y[2])
-        }
+        }*/
        //  getAll.get{(usuario) in print(usuario[0].Nome) }
        // getName.get(Nome: "jorge", callback: {(usuario) in print(usuario.Nome) })
             //{ (usuario) in
