@@ -21,6 +21,7 @@
 		3F75D2F22245AD250038EA50 /* TelaDadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */; };
 		3F75D2F52245AF510038EA50 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75D2F42245AF510038EA50 /* Database.swift */; };
 		3F907A9F224C4A7600C0FC47 /* CadastrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F907A9E224C4A7600C0FC47 /* CadastrosViewController.swift */; };
+		3FA3F21D224DA08700046FFC /* popupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3F21C224DA08700046FFC /* popupViewController.swift */; };
 		3FA43C5022499FA000580AFC /* CardDadosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C4F22499FA000580AFC /* CardDadosTableViewCell.swift */; };
 		3FA43C592249A2E400580AFC /* Alergias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C512249A2E400580AFC /* Alergias.swift */; };
 		3FA43C5A2249A2E400580AFC /* Anamnese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C522249A2E400580AFC /* Anamnese.swift */; };
@@ -51,6 +52,7 @@
 		3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaDadosTableViewController.swift; sourceTree = "<group>"; };
 		3F75D2F42245AF510038EA50 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		3F907A9E224C4A7600C0FC47 /* CadastrosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastrosViewController.swift; sourceTree = "<group>"; };
+		3FA3F21C224DA08700046FFC /* popupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popupViewController.swift; sourceTree = "<group>"; };
 		3FA43C4F22499FA000580AFC /* CardDadosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDadosTableViewCell.swift; sourceTree = "<group>"; };
 		3FA43C512249A2E400580AFC /* Alergias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alergias.swift; sourceTree = "<group>"; };
 		3FA43C522249A2E400580AFC /* Anamnese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anamnese.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				3F75D2EC22459DEF0038EA50 /* TelaPerfilViewController.swift */,
 				3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */,
 				3F0FE1E3224C41BE000EA817 /* TelaConfiguracaoViewController.swift */,
+				3FA3F21C224DA08700046FFC /* popupViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				3F907A9F224C4A7600C0FC47 /* CadastrosViewController.swift in Sources */,
 				3FA43C5B2249A2E400580AFC /* Cirurgias .swift in Sources */,
 				3FA43C642249A8C700580AFC /* DadosUsuarioTableViewCell.swift in Sources */,
+				3FA3F21D224DA08700046FFC /* popupViewController.swift in Sources */,
 				3FA43C5E2249A2E400580AFC /* DoencasFisicas.swift in Sources */,
 				3FA43C5F2249A2E400580AFC /* Medicamentos.swift in Sources */,
 				3F00858822443B8800F2679B /* AppDelegate.swift in Sources */,
