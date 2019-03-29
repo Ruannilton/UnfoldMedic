@@ -79,8 +79,12 @@ class Database{
     
     public static func Load(dados:Dados)->Void{
         Database.dados = dados;
+        
         print(Database.dados.Nome)
         print(Database.dados.ListaDoencas.count)
+    }
+    public static func getdados()->Dados{
+        return self.dados
     }
     
     public static func getDadosUsuario(tipo:DataType)->[DadosUsuario]{

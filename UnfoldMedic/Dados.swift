@@ -23,7 +23,8 @@ class Dados : Jsivis{
       var Cpf: String
       var Cidade:String
       var Estado: String
-    
+      var InfoImportantes: String
+
       var ListaVacinas = [Vacinas]()
       var ListaCirurgias = [Cirurgias]()
       var ListaMedicamentos = [Medicamentos]()
@@ -55,11 +56,12 @@ class Dados : Jsivis{
         Cpf = ""
         Cidade = ""
         Estado = ""
-        
+        InfoImportantes = ""
     }
     init(json: [String: AnyObject]){
         
         self.Nome = json["Nome"] as? String ?? ""
+      //  print(json["Nome"] as? String ?? "")
         self.DataNasc = json["Nascimento"] as? Date ?? Date()
         self.TipoSanguineo = json["TipoSanguineo"] as? String ?? ""
         self.TipoConta = json["TipoConta"] as? String ?? ""
@@ -71,6 +73,7 @@ class Dados : Jsivis{
         self.Estado = json["Estado"] as? String ?? ""
         self._id = json["_id"] as? String ?? ""
         self._rev = json["_rev"] as? String ?? ""
+        self.InfoImportantes = json["InfoImportante"] as? String ?? ""
 
         var dad = (json["Dados"] as? [ String: AnyObject])! as [String: AnyObject]
         
