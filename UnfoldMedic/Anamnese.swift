@@ -28,7 +28,7 @@ class Anamnese:DadosUsuario,Jsivis{
         return QueixaPrincipal
     }
     func getStringDados()-> String{
-        return("Data: \(self.Data) \n Interogatorio Sistematico:\n\(self.InterSis)")
+        return("Data: \(self.Data) \nQueixa Principal:\(self.QueixaPrincipal)\nInterogatorio Sistematico:\n\(self.InterSis)")
         
         
     }
