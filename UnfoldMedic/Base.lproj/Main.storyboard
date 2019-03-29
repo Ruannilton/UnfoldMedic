@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hg1-0s-7Xd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1815" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hg1-0s-7Xd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -856,7 +856,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="LabelNome" destination="bd4-2B-fIK" id="sfT-yk-BKJ"/>
-                                    <segue destination="eOw-xb-IHi" kind="show" id="rUF-cm-lc0"/>
+                                    <segue destination="eOw-xb-IHi" kind="show" identifier="detalhadosegue" id="rUF-cm-lc0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -870,10 +870,10 @@
             </objects>
             <point key="canvasLocation" x="2712.8000000000002" y="187.55622188905548"/>
         </scene>
-        <!--View Controller-->
+        <!--Popup View Controller-->
         <scene sceneID="Oem-0A-xDN">
             <objects>
-                <viewController id="eOw-xb-IHi" sceneMemberID="viewController">
+                <viewController id="eOw-xb-IHi" customClass="popupViewController" customModule="UnfoldMedic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vql-hK-ZLs"/>
                         <viewControllerLayoutGuide type="bottom" id="y1I-rO-yaM"/>
@@ -898,6 +898,9 @@
                             <constraint firstItem="zCx-WS-yCV" firstAttribute="leading" secondItem="wwA-Kx-OcW" secondAttribute="leading" constant="10" id="nZp-p4-Hnd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TextField" destination="zCx-WS-yCV" id="AOd-F1-85I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thd-Y4-Qff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
