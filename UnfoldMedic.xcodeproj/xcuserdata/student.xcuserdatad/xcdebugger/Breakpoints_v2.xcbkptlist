@@ -25,8 +25,8 @@
                   symbolName = "UnfoldMedic.DadosCard.__deallocating_deinit"
                   moduleName = "UnfoldMedic"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/Ruan/UnfoldMedic%20/UnfoldMedic/Database.swift"
-                  timestampString = "575500880.907537"
+                  urlString = "file:///Users/student/Documents/GitHub/UnfoldMedic/UnfoldMedic/Database.swift"
+                  timestampString = "575513431.338994"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -40,8 +40,8 @@
                   symbolName = "UnfoldMedic.DadosCard.deinit"
                   moduleName = "UnfoldMedic"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/Ruan/UnfoldMedic%20/UnfoldMedic/Database.swift"
-                  timestampString = "575500880.910574"
+                  urlString = "file:///Users/student/Documents/GitHub/UnfoldMedic/UnfoldMedic/Database.swift"
+                  timestampString = "575513431.341814"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -272,6 +272,38 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "LoginClick(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UnfoldMedic/Usuario.swift"
+            timestampString = "575509918.933803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "init(Dado:InfoImportantes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UnfoldMedic/Dados.swift"
+            timestampString = "575509918.933803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "init(Nome:TipoSanguineo:Login:Senha:Sexo:Cpf:Cidade:Estado:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -42,6 +42,22 @@ class Dados : Jsivis{
         ListaAnamnese.removeAll()
     }
     */
+    
+    init(Nome: String, TipoSanguineo: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String) {
+        self._id = ""
+        self._rev = ""
+        self.Nome = Nome
+        self.TipoSanguineo = TipoSanguineo
+        self.Login = Login
+        self.Senha = Senha
+        self.Sexo = Sexo
+        self.Cpf = Cpf
+        self.Cidade = Cidade
+        self.Estado = Estado
+        self.DataNasc = Date()
+        self.TipoConta = "usuario"
+    }
+    
     init(){
         _id = ""
         _rev = ""

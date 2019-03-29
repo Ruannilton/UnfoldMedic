@@ -27,6 +27,11 @@ class Usuario : Jsivis{
     var Dado: Dados
     var InfoImportantes: String
     
+    init(Dado: Dados, InfoImportantes: String) {
+        self.Dado = Dado
+        self.InfoImportantes = ""
+    }
+    
    /* init(Nome: String, DataNasc: Date, TipoSanguineo: String, TipoConta: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String, _id: String, _rev: String) {*/
     init(json: [String: AnyObject]){
         
