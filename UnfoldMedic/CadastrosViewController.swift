@@ -19,55 +19,52 @@ class CadastrosViewController: UIViewController {
     @IBOutlet weak var Login: UITextField!
     @IBOutlet weak var Senha: UITextField!
     
-    @IBAction func DataNasc(_ sender: UIDatePicker) {
-        let components = Calendar.current.dateComponents([.year, .month, .day], from: sender.date)
-        if let day = components.day, let month = components.month, let year = components.year {
-            print("\(day) \(month) \(year)")
-        }
-    }
-    /*
-    var usuario: Usuario
-    
-   
-    required init?(coder aDecoder: NSCoder) {
-    //    fatalError("init(coder:) has not been implemented")
-    self.usuario = Usuario()
-    
-    }*/
-  
+    /*var datePickerView  : UIDatePicker = UIDatePicker()
+     
+     @IBOutlet weak var dateTextField: UITextField!
+     
+     //Função para configurar do retorno do nosso DatePicker, ira retornar dia/mes/ano, faremos a conversão para String e adicionamos ao nosso TextField.
+     func handleDatePicker(sender: UIDatePicker) {
+     let dateFormatter = DateFormatter()
+     dateFormatter.dateFormat = "dd/MM/yy"
+     let strDate = dateFormatter.string(from: datePickerView.date)
+     self.dateTextField.text = strDate
+     }
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*dateTextField.inputView = datePickerView
+         datePickerView.datePickerMode = UIDatePickerMode.date
+         datePickerView.addTarget(self, action: #selector(handleDatePicker(sender:)), for: UIControlEvents.valueChanged)*/
+    }
+    override func touchesBegan(_ touches:Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    @IBAction func buttonOk(_ sender: Any) {
+        var Dado: Dados
+        Dado = Dados(Nome: Nome.text!, TipoSanguineo: TipoSangue.text!, Login: Login.text!, Senha: Senha.text!, Sexo: Sexo.text!, Cpf: CPF.text!, Cidade: Cidade.text!, Estado: Estado.text!)
+        let user = Usuario(Dado: Dado)
+        postUser.post(pUser: user)
         
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-   /*
-    @IBAction func buttonOK(_ sender: UIButton) {
-        var usuario = Usuario()
-        Usuario.Dado.Nome = Nome.text!
-        Usuario.Dado.TipoSanguineo = TipoSangue.text!
-        Usuario.Dado.Cidade = Cidade.text!
-        Usuario.Dado.Sexo = Sexo.text!
-        Usuario.Dado.Cpf = CPF.text!
-        Usuario.Dado.Login = Login.text!
-        Usuario.Dado.Senha = Senha.text!
-    }
+}
+
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destinationViewController.
+ // Pass the selected object to the new view controller.
+ }
  */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
 
 }

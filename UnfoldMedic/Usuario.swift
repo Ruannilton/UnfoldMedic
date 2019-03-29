@@ -12,7 +12,7 @@ class Usuario : Jsivis{
     /*
     let _id: String
     let _rev: String
-    
+    s
     var Nome: String
     let DataNasc: Date
     let TipoSanguineo: String
@@ -27,6 +27,11 @@ class Usuario : Jsivis{
     var Dado: Dados
        
    /* init(Nome: String, DataNasc: Date, TipoSanguineo: String, TipoConta: String, Login: String, Senha: String, Sexo: String, Cpf: String, Cidade: String, Estado: String, _id: String, _rev: String) {*/
+    
+    init(Dado: Dados) {
+        self.Dado = Dado
+    }
+    
     init(json: [String: AnyObject]){
         
          self.Dado = Dados(json: json)

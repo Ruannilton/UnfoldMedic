@@ -33,7 +33,6 @@
 		3FA43C602249A2E400580AFC /* Vacinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C582249A2E400580AFC /* Vacinas.swift */; };
 		3FA43C622249A6C200580AFC /* ExibirDadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C612249A6C200580AFC /* ExibirDadosTableViewController.swift */; };
 		3FA43C642249A8C700580AFC /* DadosUsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA43C632249A8C700580AFC /* DadosUsuarioTableViewCell.swift */; };
-		3FA96DFC224D99500058167A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA96DFB224D99500058167A /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +125,7 @@
 		3F75D2E922459B490038EA50 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F907A9E224C4A7600C0FC47 /* CadastrosViewController.swift */,
 				3FA96DFB224D99500058167A /* InitialViewController.swift */,
 				3F75D2EC22459DEF0038EA50 /* TelaPerfilViewController.swift */,
 				3F75D2EE2245AA300038EA50 /* TelaLoginPacienteViewController.swift */,
@@ -138,7 +138,6 @@
 		3F75D2F02245ACE60038EA50 /* TableViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3F907A9E224C4A7600C0FC47 /* CadastrosViewController.swift */,
 				3F75D2F12245AD250038EA50 /* TelaDadosTableViewController.swift */,
 				3FA43C612249A6C200580AFC /* ExibirDadosTableViewController.swift */,
 			);

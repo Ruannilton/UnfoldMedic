@@ -59,7 +59,7 @@ class Dados : Jsivis{
         self.TipoConta = "usuario"
         self.InfoImportantes = ""
     }
-    
+
     init(){
         _id = ""
         _rev = ""
