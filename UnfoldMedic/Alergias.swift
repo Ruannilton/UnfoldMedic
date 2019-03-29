@@ -38,6 +38,12 @@ class Alergias:DadosUsuario,Jsivis {
         return Tipo
     }
     
+    func getStringDados()-> String{
+        return("Tipo: \(self.Tipo) \nDescrição:\n\(self.Desc)")
+        
+        
+    }
+    
     func GetJson() -> [String : Any] {
 
         
