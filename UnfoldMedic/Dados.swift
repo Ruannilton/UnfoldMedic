@@ -57,6 +57,7 @@ class Dados : Jsivis{
         self.Estado = Estado
         self.DataNasc = Date()
         self.TipoConta = "usuario"
+        self.InfoImportantes = ""
     }
     
     init(){

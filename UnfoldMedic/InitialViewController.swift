@@ -31,17 +31,7 @@ class InitialViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
-        if segue.identifier == "cadastroIdentifier" {
-            
-            let stroryboard = UIStoryboard(name: "cadastro", bundle: nil)
-            let nextViewController = storyboard?.instantiateViewController(withIdentifier: "nextViewController") as! CadastroViewController
-            self.present(nextViewController, animated: true, completion: nil)
-            
-            
-            
-        } 
-        
-        
+     
         
     }
     
