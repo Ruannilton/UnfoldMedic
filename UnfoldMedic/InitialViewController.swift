@@ -37,12 +37,15 @@ class InitialViewController: UIViewController {
             let nextViewController = storyboard?.instantiateViewController(withIdentifier: "nextViewController") as! CadastroViewController
             self.present(nextViewController, animated: true, completion: nil)
             
-            
-            
         } 
         
         
         
+    }
+    
+    override func touchesBegan(_ touches:Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     
