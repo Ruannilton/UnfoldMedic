@@ -9,6 +9,10 @@
 import Foundation
 
 class Medicamentos :DadosUsuario,Jsivis{
+    func getStringDados() -> String {
+        <#code#>
+    }
+
  
     var Substancia: String
     var DataInicial: Data
@@ -22,7 +26,11 @@ class Medicamentos :DadosUsuario,Jsivis{
         self.Desc = Desc
      
     }
-    
+    func getStringDados()-> String{
+        return("Substancia: \(self.Substancia)\nData Inicial: \(self.DataInicial)\nData final \(DataFinal)\nDescrição:\n\(self.Desc)")
+        
+        
+    }
     func getNome () -> String {
         return Substancia
     }

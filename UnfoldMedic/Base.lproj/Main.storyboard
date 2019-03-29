@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1815" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hg1-0s-7Xd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hg1-0s-7Xd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -264,9 +264,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atv-jn-5TQ">
-                                <rect key="frame" x="24" y="357" width="327" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atv-jn-5TQ">
+                                <rect key="frame" x="8" y="357" width="359" height="231"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -275,8 +274,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WBC-ri-nro" firstAttribute="leading" secondItem="QNk-mp-oeJ" secondAttribute="leadingMargin" constant="8" id="2PD-PF-2EJ"/>
+                            <constraint firstAttribute="trailing" secondItem="atv-jn-5TQ" secondAttribute="trailing" constant="8" id="M04-gx-vXG"/>
                             <constraint firstItem="WBC-ri-nro" firstAttribute="top" secondItem="P0G-VT-3FL" secondAttribute="bottom" constant="30" id="NZY-cH-ECR"/>
+                            <constraint firstItem="atv-jn-5TQ" firstAttribute="top" secondItem="WBC-ri-nro" secondAttribute="bottom" constant="8" id="Q8d-hf-EVk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WBC-ri-nro" secondAttribute="trailing" constant="8" id="brF-OZ-O10"/>
+                            <constraint firstItem="5OM-cz-Vwj" firstAttribute="top" secondItem="atv-jn-5TQ" secondAttribute="bottom" constant="30" id="f8o-TV-eBj"/>
+                            <constraint firstItem="atv-jn-5TQ" firstAttribute="leading" secondItem="QNk-mp-oeJ" secondAttribute="leading" constant="8" id="lH5-m8-2Ma"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="NN8-n6-3Et"/>
@@ -830,6 +833,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="LabelNome" destination="bd4-2B-fIK" id="sfT-yk-BKJ"/>
+                                    <segue destination="eOw-xb-IHi" kind="show" id="rUF-cm-lc0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -842,6 +846,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLH-SG-uTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2712.8000000000002" y="187.55622188905548"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Oem-0A-xDN">
+            <objects>
+                <viewController id="eOw-xb-IHi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vql-hK-ZLs"/>
+                        <viewControllerLayoutGuide type="bottom" id="y1I-rO-yaM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wwA-Kx-OcW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zCx-WS-yCV">
+                                <rect key="frame" x="10" y="74" width="355" height="534"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zCx-WS-yCV" firstAttribute="top" secondItem="vql-hK-ZLs" secondAttribute="bottom" constant="10" id="Den-Px-e4V"/>
+                            <constraint firstItem="y1I-rO-yaM" firstAttribute="top" secondItem="zCx-WS-yCV" secondAttribute="bottom" constant="10" id="M6G-GB-vl6"/>
+                            <constraint firstAttribute="trailing" secondItem="zCx-WS-yCV" secondAttribute="trailing" constant="10" id="apd-wn-AvO"/>
+                            <constraint firstItem="zCx-WS-yCV" firstAttribute="leading" secondItem="wwA-Kx-OcW" secondAttribute="leading" constant="10" id="nZp-p4-Hnd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Thd-Y4-Qff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4271" y="65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hb2-qb-XT8">
