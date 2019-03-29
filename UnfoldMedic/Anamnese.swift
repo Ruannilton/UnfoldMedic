@@ -27,6 +27,12 @@ class Anamnese:DadosUsuario,Jsivis{
     func getNome () -> String {
         return QueixaPrincipal
     }
+    func getStringDados()-> String{
+        return("Data: \(self.Data) \n Interogatorio Sistematico:\n\(self.InterSis)")
+        
+        
+    }
+    
     init(json: [String: AnyObject]) {
             self.Data = json["Data"] as? Date ?? Date()
             self.Local = json["Local"] as? String ?? ""

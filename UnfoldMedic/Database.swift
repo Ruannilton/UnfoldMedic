@@ -10,6 +10,7 @@ import Foundation
 
 protocol DadosUsuario {
          func getNome()-> String
+         func getStringDados()-> String
 }
 
 enum DataType{
