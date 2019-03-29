@@ -21,6 +21,7 @@ class Vacinas:DadosUsuario,Jsivis{
     }
     func getNome () -> String {
         return Nome
+        
     }
     func getStringDados()-> String{
         return("Nome: \(self.Nome)\nData: \(self.Data)\nDescrição:\n\(self.Desc)")
