@@ -22,7 +22,11 @@ class Medicamentos :DadosUsuario,Jsivis{
         self.Desc = Desc
      
     }
-    
+    func getStringDados()-> String{
+        return("Substancia: \(self.Substancia)\nData Inicial: \(self.DataInicial)\nData final \(DataFinal)\nDescrição:\n\(self.Desc)")
+        
+        
+    }
     func getNome () -> String {
         return Substancia
     }

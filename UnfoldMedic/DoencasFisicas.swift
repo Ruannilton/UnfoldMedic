@@ -24,7 +24,11 @@ class DoencasFisicas :DadosUsuario,Jsivis{
         self.Nome = json["Nome"] as? String ?? ""
         self.Desc = json["Desc"] as? String ?? ""
     }
-    
+    func getStringDados()-> String{
+        return("Nome: \(self.Nome)\nDescrição:\n\(self.Desc)")
+        
+        
+    }
     func GetJson() -> [String : Any] {
         
         
