@@ -9,6 +9,10 @@
 import Foundation
 
 class DoencasFisicas :DadosUsuario,Jsivis{
+    func getStringDados() -> String {
+        <#code#>
+    }
+
     var Nome: String
     var Desc: String
     

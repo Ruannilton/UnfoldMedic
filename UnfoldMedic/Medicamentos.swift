@@ -9,6 +9,10 @@
 import Foundation
 
 class Medicamentos :DadosUsuario,Jsivis{
+    func getStringDados() -> String {
+        <#code#>
+    }
+
  
     var Substancia: String
     var DataInicial: Data
