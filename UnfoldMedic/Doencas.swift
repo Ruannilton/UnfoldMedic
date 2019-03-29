@@ -25,6 +25,7 @@ class Doencas :DadosUsuario,Jsivis{
         self.Desc = json["Desc"] as? String ?? ""
     }
     
+    
     func GetJson() -> [String : Any] {
         
         
