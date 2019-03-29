@@ -9,11 +9,7 @@
 import Foundation
 
 class  Cirurgias :DadosUsuario,Jsivis{
-    func getStringDados() -> String {
-        <#code#>
-    }
-
-    
+   
     var Tipo: String
     var Local: String
     var Anestesia: Bool

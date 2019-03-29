@@ -9,9 +9,7 @@
 import Foundation
 
 class Vacinas:DadosUsuario,Jsivis{
-    func getStringDados() -> String {
-        <#code#>
-    }
+   
 
 
     var Nome: String
