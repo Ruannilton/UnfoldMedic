@@ -298,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="880.79999999999995" y="-600.44977511244383"/>
         </scene>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="xSC-NS-8m8">
             <objects>
-                <viewController id="hg1-0s-7Xd" sceneMemberID="viewController">
+                <viewController id="hg1-0s-7Xd" customClass="InitialViewController" customModule="UnfoldMedic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zVF-zb-bGU"/>
                         <viewControllerLayoutGuide type="bottom" id="syJ-J0-zGH"/>
@@ -316,7 +316,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unfold Medic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-HW-JNH">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="XAP-ss-SUc">
@@ -324,18 +324,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cK-wG-guS">
                                                 <rect key="frame" x="0.0" y="0.0" width="327" height="41"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="Login Paciente"/>
+                                                <state key="normal" title="Login Paciente">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="uF5-lM-Qk7" kind="show" id="m4S-qw-nVR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-eT-qnK">
                                                 <rect key="frame" x="0.0" y="91" width="327" height="41"/>
-                                                <color key="backgroundColor" red="0.94037000511148905" green="1" blue="0.93300529116477726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="Login Médico"/>
+                                                <state key="normal" title="Login Médico">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="vfy-lv-I0D" kind="show" id="Fvs-cN-9xl"/>
                                                 </connections>
@@ -349,7 +353,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cadastre-se"/>
                                 <connections>
-                                    <segue destination="Oz5-FT-8lY" kind="show" id="PC0-Su-vRN"/>
+                                    <action selector="cadastro:" destination="hg1-0s-7Xd" eventType="touchUpInside" id="BeR-5y-NUb"/>
+                                    <segue destination="Oz5-FT-8lY" kind="show" id="iuL-5u-E7U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -360,6 +365,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="OEQ-Hh-QN6" secondAttribute="trailing" constant="8" id="thV-jw-Qoy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonCadastro" destination="DIq-FT-eHG" id="APn-dS-yrs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ej8-a4-iRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -629,6 +637,21 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBo-1G-Llz">
+                                        <rect key="frame" x="0.0" y="514.5" width="343" height="30"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="buttonOk:" destination="Oz5-FT-8lY" eventType="touchUpInside" id="QhE-Uq-d0L"/>
+                                            <segue destination="2SH-II-q3a" kind="show" id="kT2-Wr-RfG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nb-k1-bwV">
+                                        <rect key="frame" x="0.0" y="564.5" width="343" height="30"/>
+                                        <state key="normal" title="Voltar"/>
+                                        <connections>
+                                            <segue destination="hg1-0s-7Xd" kind="show" id="E0O-nR-eEz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -654,7 +677,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kz-ar-x7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1194.4000000000001" y="-634.632683658171"/>
+            <point key="canvasLocation" x="-1972" y="-537"/>
         </scene>
         <!--Tela Login Paciente View Controller-->
         <scene sceneID="eyt-c0-aVg">
@@ -1114,6 +1137,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YBJ-19-TDu"/>
+        <segue reference="kT2-Wr-RfG"/>
         <segue reference="SEk-PH-7BX"/>
         <segue reference="jT9-K8-R3u"/>
     </inferredMetricsTieBreakers>
