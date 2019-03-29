@@ -25,7 +25,14 @@ class Vacinas:DadosUsuario,Jsivis{
     }
     func getNome () -> String {
         return Nome
+        
     }
+    func getStringDados()-> String{
+        return("Nome: \(self.Nome)\nData: \(self.Data)\nDescrição:\n\(self.Desc)")
+        
+        
+    }
+    
     init(json: [String: AnyObject]){
         self.Nome =  json["Nome"] as? String ?? ""
         self.Data =  json["Data"] as? Date ?? Date()

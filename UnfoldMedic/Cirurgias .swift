@@ -26,6 +26,13 @@ class  Cirurgias :DadosUsuario,Jsivis{
         self.Desc = Desc
      
     }
+    
+    func getStringDados()-> String{
+        return("Tipo: \(self.Tipo) \nLocal:\(self.Local)\nAnestesia:\n\(self.Anestesia)\nDescrição:\n\(self.Desc)")
+        
+        
+    }
+
     func getNome () -> String {
         return Tipo
     }
